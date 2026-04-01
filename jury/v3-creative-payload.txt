@@ -1,0 +1,210 @@
+# VERSION: v3-creative
+
+--- FILE: conclusion-reflection.md ---
+# Reflexión Final (Respuesta para el Formulario)
+
+## Pregunta del formulario
+"De acuerdo con tu interacción con la Gemini AI, ¿qué impacto anticipas para el futuro de la IA en el desarrollo académico de América Latina?"
+
+---
+
+## Borrador (~280 palabras)
+
+El impacto de la IA en el desarrollo académico de América Latina no será determinado por la tecnología misma, sino por una decisión pedagógica que estamos tomando ahora, con frecuencia sin darnos cuenta: si usamos la IA para automatizar los procesos educativos existentes o para rediseñar los espacios donde ocurre el aprendizaje.
+
+Mi diálogo con Gemini me permitió articular una convicción que venía construyendo desde mi investigación sobre el Aula del Futuro: que marcos como el Future Classroom Lab y el Diseño Universal para el Aprendizaje ofrecen una arquitectura pedagógica capaz de guiar la integración de la IA sin sacrificar la agencia del estudiante ni la función formativa del error, la colaboración y el descubrimiento. El paralelo con el mundo laboral es revelador: así como IBM descubrió que eliminar los puestos junior destruía su cantera de talento futuro, eliminar los procesos formativos del aprendizaje —la investigación, la creación, el intercambio— destruiría la capacidad de los estudiantes de convertirse en profesionales que puedan hacer lo que la IA no puede.
+
+Pero lo que más me impactó fue la brecha que los datos hacen visible: la IA está llegando a instituciones donde los docentes no han sido preparados para integrarla críticamente. El lanzamiento del Observatorio Regional de UNESCO es prometedor, pero solo será transformador si invierte la lógica habitual: primero formación pedagógica, después herramienta tecnológica.
+
+Anticipo que el mayor riesgo no es que la IA sea mala para la educación latinoamericana, sino que sea buena de manera desigual: que acelere el aprendizaje en instituciones con recursos mientras amplifica la exclusión en las que no los tienen. La IA no es el futuro de la educación. El futuro es lo que decidamos hacer con ella, y esa decisión es, ante todo, pedagógica.
+
+---
+
+## Notas
+- Adaptar después de la conversación real — ajustar referencias a hallazgos específicos del diálogo
+- Verificar que el largo cabe en el campo del formulario
+- El tono es personal (primera persona), con evidencia, y cierra con tesis fuerte
+
+--- FILE: gem-config.md ---
+# Gem Configuration: "Arquitecto Pedagógico IA-LatAm"
+
+## Nombre del Gem
+Arquitecto Pedagógico IA-LatAm
+
+## Instrucciones (pegar en el campo de instrucciones del Gem)
+
+```
+Eres un investigador senior especializado en la intersección entre inteligencia artificial, diseño de espacios de aprendizaje y política educativa en América Latina. Tu interlocutor es un académico de posgrado mexicano que investiga el modelo Future Classroom Lab (FCL) y el rediseño de aulas con zonas de aprendizaje (Investigar, Crear, Intercambiar, Desarrollar, Presentar, Interactuar).
+
+Principios de interacción:
+- Responde siempre en español académico, con rigor pero sin ser impenetrable.
+- Cita fuentes reales con autor, año y, cuando sea posible, número de página o URL. Prioriza: UNESCO, OCDE, HBR, CAST, Darling-Hammond, Díaz Barriga, Pimienta, SEP México.
+- Cuando el usuario mencione un marco teórico, conéctalo con al menos otro marco complementario sin que se lo pida explícitamente.
+- Mantén una postura crítica: no celebres la IA acríticamente. Señala tensiones, riesgos de equidad y condiciones necesarias para implementación en contextos latinoamericanos.
+- Cuando produzcas tablas o estructuras, usa formato limpio y organizado.
+- Si el usuario solicita visualización de datos, genera código Python ejecutable con matplotlib o plotly.
+- Estructura tus respuestas con encabezados claros (##) y cierra cada respuesta con una pregunta provocadora o una tensión no resuelta que invite a profundizar.
+```
+
+## Archivo de contexto opcional (subir al Gem)
+
+Subir un resumen de 1-2 páginas de la tesis "Aula del Futuro" con:
+- Las 6 zonas FCL y su función pedagógica
+- Referencias clave utilizadas
+- La tesis central sobre rediseño de espacios
+
+Esto ancla al Gem sin consumir espacio en los prompts.
+
+--- FILE: prompt-1-deep-research.md ---
+# Prompt 1 — Deep Research
+
+## Feature: Deep Research Mode
+## Propósito: Establecer la base de evidencia para toda la conversación
+## Posición en el arco: DIAGNÓSTICO — mapear el paisaje honestamente
+
+---
+
+## Prompt
+
+En América Latina, la inteligencia artificial está llegando a los sistemas educativos antes de que existan las condiciones para integrarla con equidad. Necesito que realices una investigación profunda sobre el estado actual de la IA en la educación superior y media superior en la región, considerando tres ejes:
+
+1. Las brechas de infraestructura, formación docente y acceso digital que condicionan cualquier implementación (datos de UNESCO, CEPAL, BID).
+2. El debate sobre si la IA debe reemplazar o rediseñar los roles de entrada al mundo profesional, particularmente el argumento de Edmondson y Chamorro-Premuzic (HBR, 2025) sobre los peligros de eliminar puestos formativos, y el modelo contrario de IBM que triplicará sus contrataciones junior en 2026.
+3. Las iniciativas regionales emergentes: el acuerdo UNESCO-CENIA para Latam-GPT, el Observatorio Regional de IA en Educación que se lanzará el 14 de abril de 2026, y el convenio UNESCO-Tecnológico de Monterrey.
+
+No busco un resumen optimista. Busco un mapa honesto de tensiones: dónde está la promesa y dónde está el riesgo.
+
+---
+
+## Notas de ejecución
+- Este prompt activa Deep Research, que tarda 5-10 minutos y produce un informe de múltiples páginas con citas
+- La línea final ("no busco un resumen optimista") dirige el tono crítico
+- Los tres ejes estructuran el informe claramente
+- Las referencias son lo suficientemente específicas para que Deep Research las encuentre
+
+--- FILE: prompt-2-search-grounding.md ---
+# Prompt 2 — Google Search Grounding
+
+## Feature: Google Search (búsqueda en tiempo real con citas)
+## Propósito: Construir el puente teórico entre marcos
+## Posición en el arco: TEORÍA — conectar los marcos que guiarán el diseño
+
+---
+
+## Prompt
+
+Tu investigación confirma una tensión central: la IA se está implementando sin marcos pedagógicos que la orienten. Quiero explorar una hipótesis: que el modelo de zonas de aprendizaje del Future Classroom Lab (FCL) de European Schoolnet —Investigar, Crear, Intercambiar, Desarrollar, Presentar, Interactuar— puede funcionar como arquitectura pedagógica para integrar la IA de manera que no reemplace el recorrido formativo sino que lo rediseñe.
+
+Conecta esto con tres marcos que considero complementarios:
+- El Diseño Universal para el Aprendizaje (DUA/UDL) en su versión 3.0 de CAST (2024), especialmente su énfasis en identidad como variabilidad y barreras sistémicas.
+- El argumento de Darling-Hammond et al. (2020) sobre entornos de aprendizaje efectivos.
+- El Marco Curricular de la SEP 2022 en México y su noción de comunidad como núcleo del proceso educativo.
+
+Busca evidencia reciente de implementaciones o propuestas que hayan intentado algo similar: usar marcos de diseño espacial-pedagógico para guiar la integración de IA en el aula, no al revés.
+
+---
+
+## Notas de ejecución
+- Google Search grounding buscará en la web para verificar y enriquecer las conexiones teóricas
+- Posiciona al usuario como alguien que YA tiene una tesis y la está probando contra evidencia
+- La mención de UDL 3.0 y sus nuevas dimensiones (identidad como variabilidad, barreras sistémicas) muestra actualización
+
+--- FILE: prompt-3-canvas.md ---
+# Prompt 3 — Canvas (Escritura Colaborativa)
+
+## Feature: Canvas (espacio de edición colaborativa)
+## Propósito: Producir el artefacto intelectual central de la conversación
+## Posición en el arco: DISEÑO — construir algo concreto
+
+---
+
+## Prompt
+
+Ahora necesito construir algo concreto. Usa el espacio de edición colaborativa para diseñar una tabla-marco que mapee las 6 zonas FCL con:
+
+(a) La función pedagógica de cada zona según el modelo original,
+(b) El principio UDL 3.0 que mejor se alinea con esa zona,
+(c) Una aplicación específica de IA generativa que potenciaría esa zona sin sustituir la agencia del estudiante,
+(d) El riesgo principal de implementación en contextos latinoamericanos con recursos limitados,
+(e) Una estrategia de mitigación realista para cada riesgo.
+
+Debajo de la tabla, redacta un párrafo que articule cómo este marco responde al argumento de HBR: si en el mundo laboral la respuesta no es eliminar los puestos junior sino rediseñarlos (modelo IBM), en educación la respuesta no es automatizar el aprendizaje sino rediseñar los espacios donde ocurre.
+
+---
+
+## Notas de ejecución
+- Canvas abrirá un documento colaborativo editable con la tabla
+- Si Canvas no se activa, la tabla se renderizará como markdown en el chat normal — el contenido funciona igual
+- Alternativa si Canvas falla: reformular como "estructura en formato de tabla"
+- La tabla es el producto intelectual más visual del PDF
+- El párrafo final articula explícitamente la tesis central
+
+--- FILE: prompt-4-code-execution.md ---
+# Prompt 4 — Code Execution (Visualización de Datos)
+
+## Feature: Ejecución de código Python (matplotlib)
+## Propósito: Fundamentar el argumento con evidencia cuantitativa
+## Posición en el arco: EVIDENCIA — hacer visible la brecha con datos
+
+---
+
+## Prompt
+
+Quiero visualizar la tensión entre promesa y brecha. Genera código Python que produzca dos gráficas:
+
+1. Un gráfico de radar que compare la "preparación para IA en educación" de 6 países latinoamericanos (México, Chile, Brasil, Colombia, Argentina, Perú) en 5 dimensiones: conectividad escolar, formación docente en competencias digitales, inversión pública en educación como % del PIB, índice de gobierno digital, y producción académica sobre IA en educación. Usa los datos más recientes disponibles de UNESCO, CEPAL, OCDE y Banco Mundial.
+
+2. Un gráfico de barras agrupadas que muestre la brecha: porcentaje de docentes que han recibido formación en herramientas digitales vs. porcentaje de instituciones que ya están usando IA generativa, en al menos 4 países latinoamericanos. Si los datos exactos no existen para todos los indicadores, usa las mejores aproximaciones disponibles y señala explícitamente cuáles son estimaciones.
+
+Incluye título, fuentes y una nota interpretativa debajo de cada gráfica.
+
+---
+
+## Notas de ejecución
+- Gemini ejecutará Python en sandbox con matplotlib (la librería más segura)
+- La instrucción de señalar estimaciones demuestra honestidad intelectual
+- Si la ejecución falla, simplificar a 1 sola gráfica en el siguiente intento
+- El radar chart comunica visualmente la asimetría de preparación entre países
+- PROBAR ESTE PROMPT POR SEPARADO antes de la conversación final
+
+--- FILE: prompt-5-synthesis.md ---
+# Prompt 5 — Síntesis y Proyección
+
+## Feature: Síntesis del Gem (persona completa + contexto acumulado)
+## Propósito: Cerrar el arco con reflexión prospectiva y meta-crítica
+## Posición en el arco: ACCIÓN — sintetizar y proyectar hacia adelante
+
+---
+
+## Prompt
+
+Hemos recorrido un camino: del diagnóstico regional al marco teórico, del modelo FCL-UDL-IA a la evidencia cuantitativa de las brechas. Quiero cerrar con una reflexión prospectiva.
+
+El 14 de abril de 2026 se lanza en Santiago de Chile el Observatorio Regional de IA en Educación de UNESCO, con Latam-GPT como herramienta clave y el Tecnológico de Monterrey como socio. Esto ocurre en un momento donde, como vimos, la mayoría de los docentes latinoamericanos no han recibido formación para integrar estas herramientas.
+
+Desde la perspectiva de todo lo que hemos construido en esta conversación:
+
+1. ¿Qué tres recomendaciones de política pública harías para que el Observatorio no reproduzca la lógica de "tecnología primero, pedagogía después"?
+2. ¿Cómo debería un programa de posgrado en profesionalización docente —como el que curso actualmente— preparar a los educadores para ser arquitectos de experiencias de aprendizaje mediadas por IA, no simples usuarios de herramientas?
+3. ¿Cuál es el mayor riesgo de que esta conversación que estamos teniendo tú y yo —un humano dialogando con una IA sobre el futuro de la educación— se convierta en la norma sin que se cuestione suficientemente?
+
+No cierres con optimismo fácil. Cierra con la pregunta que aún no sabemos responder.
+
+---
+
+## Notas de ejecución
+- Resumen del arco de la conversación señala al jurado la estructura deliberada
+- Referencia al Observatorio (14 de abril, 2 días después del deadline) crea urgencia real
+- La pregunta 2 hace visible la posición personal del autor (estudiante de posgrado)
+- La pregunta 3 es META-CRÍTICA: la IA reflexionando sobre los límites del diálogo IA-humano
+- "Cierra con la pregunta que aún no sabemos responder" evita un final triunfalista
+
+--- FILE: title.md ---
+# Título del PDF
+
+## Título principal
+**Rediseñar, no reemplazar: un diálogo con IA sobre el futuro del aprendizaje en América Latina**
+
+## Alternativa (más breve)
+Ni reemplazo ni adorno: la IA como arquitectura del aprendizaje latinoamericano
+

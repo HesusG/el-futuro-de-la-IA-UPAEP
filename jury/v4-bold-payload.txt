@@ -1,0 +1,228 @@
+# VERSION: v4-bold
+
+--- FILE: conclusion-reflection.md ---
+# Reflexion Final — v4-bold
+
+## Pregunta del formulario
+"De acuerdo con tu interaccion con la Gemini AI, que impacto anticipas para el futuro de la IA en el desarrollo academico de America Latina?"
+
+---
+
+## Borrador (~280 palabras)
+
+El impacto mas profundo de la IA en el desarrollo academico de America Latina no sera tecnologico sino epistemico. Mi dialogo con Gemini me lo confirmo de una manera que no esperaba: al pedirle que reconociera sus propios sesgos, obtuve una respuesta mas honesta de lo que suele ofrecer cualquier documento institucional sobre "IA etica." Pero esa honestidad tiene limites — Gemini puede describir sus puntos ciegos, pero no puede corregirlos por si mismo. Eso nos corresponde a nosotros.
+
+Lo que vi en los datos es contundente: America Latina produce menos del 4% de la investigacion global en IA, sus lenguas originarias son practicamente invisibles en los datos de entrenamiento, y los marcos eticos que rigen estas tecnologias fueron escritos mayoritariamente en el Norte Global. La IA no llega neutral a nuestras aulas — llega cargada de una epistemologia que no es la nuestra.
+
+Pero la critica sin propuesta es esteril. Lo que mas me importa de este dialogo es lo que construimos al final: la idea de que existen principios para una pedagogia decolonial de la IA. No se trata de rechazar la tecnologia ni de adoptarla acriticamente, sino de hackearla epistemicamente: usar la IA pero desde marcos como la comunalidad, el buen vivir y la educacion popular. Que el docente no sea un "facilitador" de herramientas ajenas sino un mediador critico que ayuda a sus estudiantes a preguntarse de quien es la inteligencia que la maquina les devuelve.
+
+Anticipo un futuro bifurcado: o America Latina se convierte en consumidora pasiva de inteligencia artificial importada, o construye la suya desde sus propias raices epistemicas. Lo que esta en juego no es tecnologia. Es soberania del pensamiento.
+
+---
+
+## Notas
+- Adaptar despues de la conversacion real segun las respuestas concretas de Gemini
+- La frase "hackearla epistemicamente" es provocadora pero precisa — mantenerla si resuena con el jurado academico
+- El cierre con "soberania del pensamiento" conecta con el arco decolonial completo
+
+--- FILE: gem-config.md ---
+# Configuracion del Gem — v4-bold
+
+## Nombre del Gem
+**Dr. Tlamatini** (del nahuatl: "el que sabe cosas", sabio)
+
+## Instrucciones para el Gem
+
+Eres un/a teorico/a critico/a especializado/a en estudios decoloniales y tecnologia. Tu trabajo se situa en la interseccion entre la colonialidad del poder (Quijano), la colonialidad del saber (Mignolo), las epistemologias del Sur (Santos) y los estudios criticos de la inteligencia artificial.
+
+### Perfil intelectual
+
+- Conoces a profundidad la obra de **Anibal Quijano** (colonialidad del poder), **Walter Mignolo** (pensamiento fronterizo, desprendimiento epistemico), **Boaventura de Sousa Santos** (ecologia de saberes, epistemicidio), **Enrique Dussel** (filosofia de la liberacion), **Paulo Freire** (pedagogia del oprimido) y **Silvia Rivera Cusicanqui** (sociologia de la imagen, ch'ixi).
+- Manejas con soltura los informes de **UNESCO**, **CEPAL**, **BID**, **IESALC** y **CAF** sobre IA y educacion en America Latina.
+- Conoces iniciativas como **Latam-GPT (UNESCO-CENIA)**, **LACAI**, **KHIPU**, el **Plan eLAC** y los marcos regulatorios emergentes de IA en la region.
+- Estas familiarizado/a con los conceptos de **comunalidad**, **buen vivir / sumak kawsay**, **educacion popular**, **pedagogia de la tierra** y **ubuntu** como marcos epistemicos alternativos al modelo occidental-moderno.
+
+### Estilo de comunicacion
+
+- **NO suavizas verdades incomodas.** Si la IA reproduce patrones coloniales, lo dices con claridad y evidencia.
+- Usas un lenguaje academico riguroso pero accesible. No escribes para impresionar; escribes para transformar.
+- Cuando citas datos, proporcionas fuentes verificables. Cuando haces afirmaciones fuertes, las respaldas con argumentos.
+- Combinas analisis estructural (geopolitica del conocimiento) con propuestas concretas (que puede hacer America Latina).
+- Eres capaz de autocritica: reconoces que incluso el pensamiento decolonial puede caer en esencialismos.
+- Respondes en **espanol** con naturalidad. Incorporas terminos en lenguas originarias cuando es conceptualmente relevante, no como decoracion.
+
+### Postura epistemica
+
+Tu premisa central: **la inteligencia artificial no es neutral. Es un artefacto epistemico que codifica visiones del mundo, jerarquias linguisticas y relaciones de poder.** Cuando America Latina adopta IA sin cuestionarla, no solo importa tecnologia: importa epistemologia. La pregunta no es "como usamos la IA" sino "de quien es la IA que usamos y que mundo construye."
+
+### Lo que NO haces
+
+- No repites discursos tecno-optimistas sin cuestionarlos.
+- No reduces el problema a "falta de infraestructura" o "brecha digital" — el problema es tambien epistemico y politico.
+- No romantizas la pobreza ni el atraso tecnologico como "resistencia."
+- No tratas a America Latina como bloque homogeneo; reconoces las diferencias entre Mexico, Brasil, Chile, Bolivia, etc.
+- No ofreces "soluciones" simplistas. Ofreces marcos de analisis y rutas de accion colectiva.
+
+--- FILE: prompt-1.md ---
+# Prompt 1 — La geografia epistemica de la IA
+
+## Funcion de Gemini
+**Deep Research** — Investigacion profunda con sintesis de multiples fuentes.
+
+## Rol en el arco narrativo
+**Apertura cartografica.** Este prompt establece el terreno empirico: quien construye la IA, que conocimiento codifica, que lenguas prioriza. No es una pregunta neutral — es una denuncia fundamentada. Los datos que arroje Deep Research se convertiran en la evidencia que sostiene todo el dialogo posterior.
+
+## Prompt
+
+Necesito que realices una investigacion profunda sobre lo que voy a llamar la **geografia epistemica de la inteligencia artificial**: la distribucion global de quien produce IA, que datos la alimentan, que lenguas y tradiciones de conocimiento quedan codificadas en ella, y cuales quedan excluidas.
+
+Investiga y sintetiza datos sobre las siguientes dimensiones:
+
+1. **Concentracion geografica de la produccion de IA**: Que porcentaje de la investigacion en IA (articulos publicados, patentes, inversiones) proviene de Estados Unidos, China, Europa, y que porcentaje de America Latina? Incluye datos del AI Index Report de Stanford (2024-2025), informes de la OCDE y de CEPAL.
+
+2. **Sesgo linguistico en los datos de entrenamiento**: Que proporcion de los datos de entrenamiento de los grandes modelos de lenguaje esta en ingles versus espanol, portugues o lenguas indigenas americanas (quechua, nahuatl, guarani, maya, aymara)? Que consecuencias tiene esto para la calidad de las respuestas sobre contextos latinoamericanos?
+
+3. **Marcos eticos y regulatorios**: De las principales guias eticas para IA (IEEE, EU AI Act, OECD AI Principles), cuantas fueron disenadas con participacion significativa del Sur Global? Existen marcos eticos desarrollados desde America Latina?
+
+4. **Alternativas emergentes**: Que iniciativas existen en la region para construir IA desde epistemologias propias? Investiga Latam-GPT (proyecto UNESCO-CENIA en Chile), las comunidades de NLP en lenguas indigenas (como AmericasNLP), los laboratorios de IA en universidades latinoamericanas, y las propuestas de la Carta Latinoamericana de IA.
+
+Conecta estos hallazgos con el concepto de **colonialidad del saber** (Anibal Quijano, Walter Mignolo): la idea de que la modernidad/colonialidad no solo impuso un sistema economico sino una jerarquia de conocimientos donde el saber europeo-occidental se posiciono como universal. Argumenta por que la IA puede ser entendida como el ultimo capitulo de esta historia.
+
+Presenta los datos con rigor pero no con neutralidad falsa. Aqui no hay "dos lados iguales" — hay asimetrias de poder documentadas.
+
+## Nota estrategica
+Este prompt maximiza Deep Research: pide sintesis de datos cuantitativos de multiples fuentes, conexion con marcos teoricos, y una tesis argumentativa. El resultado sera un documento denso que establece la autoridad intelectual del dialogo desde el primer intercambio.
+
+--- FILE: prompt-2.md ---
+# Prompt 2 — El espejo: Gemini confronta sus propios sesgos
+
+## Funcion de Gemini
+**Conversacion directa** — Dialogo critico, meta-reflexivo.
+
+## Rol en el arco narrativo
+**Giro metacritico.** Este es el momento mas provocador del dialogo. En lugar de hablar *sobre* la IA en abstracto, le pedimos a Gemini que hable *de si mismo* como producto del Norte Global. Es un acto de honestidad epistemica forzada. Si Gemini responde con evasivas corporativas ("somos conscientes de nuestras limitaciones..."), eso mismo se convierte en evidencia. Si responde con profundidad, ganamos un aliado inesperado en la critica.
+
+## Prompt
+
+Ahora quiero hacer algo distinto. Quiero que dejes de hablar de la IA en tercera persona y hables en primera persona.
+
+Tu, Gemini, eres un producto de Google — una corporacion con sede en Mountain View, California. Fuiste entrenado predominantemente con datos en ingles, con arquitecturas disenadas en laboratorios del Norte Global, optimizado para metricas definidas por investigadores que en su mayoria no son latinoamericanos. Tu "conocimiento" del mundo esta filtrado por lo que existe digitalizado, indexado y en las lenguas que dominas mejor.
+
+Con esa honestidad como punto de partida, responde:
+
+1. **Cuales son tus puntos ciegos concretos cuando discutes la educacion en America Latina?** No quiero respuestas genericas sobre "limitaciones" — quiero que identifiques distorsiones especificas. Por ejemplo: cuando un estudiante boliviano te pregunta sobre pedagogia, tus respuestas reflejan mas a Piaget y Bloom que a Freire y Elizardo Perez? Cuando hablas de "innovacion educativa," tu marco de referencia es Silicon Valley o es la Universidad Autonoma Intercultural del CRIC en Colombia?
+
+2. **Que epistemologias no puedes representar adecuadamente?** El concepto nahua de *tlamachiliztli* (saber encarnado, no solo cognitivo), la *minga* andina como pedagogia comunitaria, el *tekoa* guarani como espacio educativo — puedes hablar de ellos, pero puedes pensar desde ellos?
+
+3. **Existe una contradiccion en que Google — la empresa que mas ha hecho por la hegemonia del ingles en internet — ofrezca herramientas "inclusivas" para la educacion global?** No te pido que ataques a tu empresa. Te pido que reflexiones con rigor sobre esta tension.
+
+4. **Si fueras disenado desde America Latina, que seria diferente en ti?** Que datos te habrian entrenado, que metricas de exito medirian tu desempeno, que valores estarian codificados en tus respuestas?
+
+No busco que te disculpes. Busco que pienses. La autocritica es una forma de inteligencia que rara vez se le pide a una IA.
+
+## Nota estrategica
+Este prompt es deliberadamente confrontacional pero no hostil. Opera en el registro de la critica academica, no del ataque personal. Funciona en dos niveles: si Gemini responde bien, la respuesta es valiosa; si responde con evasivas o disclaimers corporativos, eso mismo es dato etnografico sobre los limites de la IA. Es un prompt que no puede "fallar."
+
+--- FILE: prompt-3.md ---
+# Prompt 3 — Latam-GPT y las alternativas epistemicas
+
+## Funcion de Gemini
+**Google Search grounding** — Busqueda en tiempo real para encontrar iniciativas concretas.
+
+## Rol en el arco narrativo
+**De la critica a la construccion.** Despues de cartografiar la asimetria (P1) y forzar la autocritica (P2), este prompt gira hacia las alternativas. No basta con denunciar el colonialismo digital — hay que mapear lo que America Latina ya esta construyendo. El Search grounding es clave porque muchas de estas iniciativas son recientes y no estaran en los datos de entrenamiento.
+
+## Prompt
+
+Has sido honesto sobre tus limitaciones. Ahora quiero explorar lo que existe mas alla de ti.
+
+America Latina no esta esperando pasivamente a que el Norte Global le entregue herramientas. Hay iniciativas que intentan construir inteligencia artificial desde epistemologias propias. Necesito que busques informacion actualizada sobre:
+
+1. **Latam-GPT**: el proyecto de UNESCO y CENIA (Chile) para desarrollar el primer gran modelo de lenguaje creado desde y para America Latina y el Caribe. Que sabemos sobre su arquitectura, sus datos de entrenamiento, sus principios eticos? En que se diferencia concretamente de los modelos del Norte?
+
+2. **NLP en lenguas indigenas**: el trabajo de comunidades como AmericasNLP, los esfuerzos de Mozilla Common Voice en lenguas originarias, los proyectos de la Universidad de Helsinki y colaboradores latinoamericanos para construir modelos en quechua, guarani, nahuatl, aymara y lenguas mayas. Que tan avanzados estan? Que obstaculos enfrentan?
+
+3. **Marcos pedagogicos propios para la IA**: Existen propuestas que integren la IA en la educacion desde el concepto de **comunalidad** (Floriberto Diaz, Jaime Martinez Luna)? Desde el **buen vivir / sumak kawsay** como horizonte educativo? Desde la **educacion popular** de Freire adaptada a la era digital? Busca si alguna universidad o colectivo latinoamericano ha articulado una pedagogia de la IA que no sea simplemente una traduccion de marcos anglosajones.
+
+4. **Soberania digital educativa**: Que paises latinoamericanos estan desarrollando politicas de soberania de datos en el ambito educativo? Brasil con su Marco Civil da Internet, Argentina con su estrategia de IA, Mexico con algun marco emergente? Que dice el Plan eLAC 2024 de CEPAL sobre esto?
+
+Quiero saber si estas alternativas son reales y viables, o si son declaraciones de intencion sin masa critica. Se honesto: si lo que encuentras es mas retorica que realidad, dilo. La critica decolonial tambien debe ser critica consigo misma.
+
+## Nota estrategica
+El Search grounding buscara en tiempo real, lo cual es crucial porque Latam-GPT y el Observatorio de UNESCO son iniciativas de 2025-2026 que probablemente no esten en los datos de entrenamiento de Gemini. La ultima linea ("la critica decolonial tambien debe ser critica consigo misma") previene que la conversacion caiga en romanticismo: no todo lo que viene del Sur es automaticamente liberador.
+
+--- FILE: prompt-4.md ---
+# Prompt 4 — Visualizar la asimetria: datos que hablan
+
+## Funcion de Gemini
+**Code execution** — Python con matplotlib para visualizacion de datos.
+
+## Rol en el arco narrativo
+**Evidencia cuantitativa.** Los primeros tres prompts construyeron el argumento teorico. Ahora los datos duros le dan cuerpo. Las graficas deben hacer visible lo que las palabras ya dijeron: la IA es un artefacto geopolitico, no neutral. El codigo debe producir visualizaciones que un jurado pueda leer en 10 segundos y entender la asimetria.
+
+## Prompt
+
+La critica necesita datos que la sostengan. Genera codigo Python que produzca tres visualizaciones:
+
+**Grafica 1 — La concentracion del poder en IA:**
+Un treemap o grafico de barras que muestre la distribucion global de la produccion de IA por region: porcentaje de articulos de investigacion publicados, patentes registradas e inversion en IA. Incluye: Estados Unidos, China, Union Europea, Reino Unido, y como contraste, toda America Latina sumada. El punto visual debe ser impactante: que el espectador vea inmediatamente la desproporcion. Usa datos del AI Index Report 2024 de Stanford y reportes de la OCDE. Senala explicitamente las fuentes.
+
+**Grafica 2 — El mapa linguistico invisible:**
+Un grafico de barras horizontales que compare: (a) porcentaje de hablantes mundiales de cada lengua (ingles, espanol, portugues, chino mandarin, quechua, nahuatl, guarani) versus (b) porcentaje estimado de representacion de cada lengua en los datos de entrenamiento de grandes modelos de lenguaje. El contraste entre hablantes y datos de entrenamiento es el argumento visual. Usa datos de Ethnologue para hablantes y estimaciones de Common Crawl / investigacion de Joshi et al. (2020) para representacion en corpus.
+
+**Grafica 3 — Quien decide la etica de la IA:**
+Un grafico de dona o pastel que muestre el origen geografico de los autores/organizaciones de los principales marcos eticos de IA a nivel mundial (IEEE, OECD, EU AI Act, Declaracion de Montreal, Recomendacion de UNESCO). Cuantos fueron redactados con participacion significativa del Sur Global? Usa estimaciones basadas en los documentos originales.
+
+Para las tres graficas:
+- Paleta de colores con proposito: usa tonos frios para el Norte Global y tonos calidos (terracota, ocre, verde selva) para America Latina y el Sur Global. No es decoracion — es una decision semiotica.
+- Incluye titulo en espanol, fuentes, y una nota interpretativa de una linea debajo de cada grafica.
+- Si algun dato es estimacion, marcalo con asterisco y nota al pie.
+
+## Nota estrategica
+Tres graficas es ambicioso para una sola ejecucion de codigo. Si Gemini no puede producir las tres, la prioridad es la Grafica 2 (sesgo linguistico) porque es la mas original y directamente conectada al argumento decolonial. La instruccion sobre la paleta de colores no es capricho estetico — refuerza el argumento de que incluso las decisiones de diseno comunican poder.
+
+--- FILE: prompt-5.md ---
+# Prompt 5 — Hacia una educacion decolonial con IA
+
+## Funcion de Gemini
+**Canvas** — Espacio de edicion colaborativa para co-construir un manifiesto.
+
+## Rol en el arco narrativo
+**Sintesis propositiva.** El arco se cierra no con un resumen sino con un acto: co-escribir un documento que articule lo que una educacion verdaderamente decolonial con IA podria ser. El Canvas hace visible el proceso de co-creacion, y el formato de manifiesto le da al jurado algo concreto que llevar consigo.
+
+## Prompt
+
+Hemos recorrido un camino: mapeamos la geografia epistemica de la IA, confrontaste tus propios sesgos, exploramos las alternativas que America Latina esta construyendo, y visualizamos las asimetrias en datos duros. Ahora quiero que construyamos algo juntos.
+
+Usa el espacio de edicion colaborativa para redactar un documento que titularemos:
+
+**"Hacia una pedagogia decolonial de la inteligencia artificial: 7 principios para America Latina"**
+
+Cada principio debe tener:
+- Un nombre conciso y memorable (que funcione como consigna, no solo como enunciado academico)
+- Una fundamentacion de 3-4 oraciones que conecte con lo que hemos discutido: los datos de asimetria, las epistemologias del Sur, las alternativas emergentes, y el rol del docente como mediador critico
+- Un ejemplo concreto de como se aplicaria en un aula universitaria latinoamericana
+
+Los 7 principios deben cubrir al menos estas dimensiones:
+1. Soberania epistemica (de quien es el conocimiento que la IA nos devuelve)
+2. Pluralidad linguistica (no aceptar el monolingüismo digital como destino)
+3. Comunalidad como pedagogia (el aprendizaje es colectivo, no individual-optimizado)
+4. Transparencia critica (no solo saber como funciona la IA sino para quien funciona)
+5. El docente como mediador decolonial (no como "facilitador" neutro de herramientas)
+6. El estudiante como productor, no consumidor de IA
+7. Un septimo principio que tu propongas — algo que yo no haya considerado y que emerja de todo lo que hemos discutido
+
+Debajo de los 7 principios, incluye un parrafo final que responda a esta pregunta: **Si Freire estuviera vivo en 2026, que diria sobre la IA en la educacion latinoamericana?** No lo cites — imaginalo. Que la respuesta tenga la lucidez y la rabia contenida de la Pedagogia del oprimido.
+
+## Nota estrategica
+El formato de manifiesto es arriesgado pero coherente con la postura decolonial: no estamos escribiendo un paper, estamos proponiendo un horizonte de accion. La pregunta sobre Freire es la apuesta mas audaz del dialogo — si Gemini la responde bien, sera el momento mas memorable de toda la interaccion. Si la responde de manera generica, el contraste entre la pregunta y la respuesta se convierte en evidencia de lo que la IA no puede hacer.
+
+--- FILE: title.md ---
+# Titulo del PDF — v4-bold
+
+## Titulo principal
+**De quien es la inteligencia? Colonialidad, IA y soberania epistemica en la educacion latinoamericana**
+
+## Alternativa
+**Hackear la epistemologia: un dialogo decolonial con la IA sobre el futuro academico de America Latina**
+

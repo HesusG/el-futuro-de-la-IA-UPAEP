@@ -1,0 +1,616 @@
+# VERSION FAMILY: v8-fresh
+
+==============================
+## SUB-LEVEL: v8-fresh-conservative
+==============================
+
+--- FILE: conclusion-reflection.md ---
+# Conclusión — Reflexión personal (~280 palabras)
+
+## Para el campo del formulario: "¿Qué impacto anticipas para el futuro de la IA en el desarrollo académico de América Latina?"
+
+---
+
+Antes de esta conversación, pensaba en la inteligencia artificial como una herramienta más, similar a Google o Wikipedia: algo útil pero externo al proceso de aprender. El diálogo con Gemini me obligó a ver algo que tenía frente a mí pero no había articulado: la IA ya no es externa al aprendizaje universitario. Ya está adentro. Mis compañeros y yo la usamos todos los días para entender lecturas, redactar textos, resolver problemas y traducir contenido académico. La pregunta ya no es si la IA tendrá impacto, sino si ese impacto — que ya existe — será formativo o deformante.
+
+Lo que más me impactó de la evidencia revisada es la paradoja del uso sin formación. Los estudios muestran que los estudiantes universitarios adoptamos la IA masivamente, pero de manera autodidacta y frecuentemente superficial. Usamos herramientas sofisticadas con la misma lógica con la que buscamos respuestas en Google: queremos el resultado, no el proceso. Esto es particularmente riesgoso en América Latina, donde la brecha digital no es solo de acceso sino de calidad de uso, y donde las universidades públicas — que atienden a la mayoría — tienen menos recursos para responder a este cambio.
+
+Anticipo que el impacto será desigual. Las universidades que logren integrar la IA como parte explícita de la formación — no prohibiéndola ni ignorándola, sino enseñando a usarla críticamente — producirán egresados con una ventaja significativa. Las que no lo hagan verán una generación de profesionales que saben obtener respuestas pero no saben evaluarlas. El futuro de la IA en la academia latinoamericana no depende de la tecnología. Depende de si las instituciones deciden acompañar un proceso que los estudiantes ya iniciamos solos.
+
+---
+
+**Word count:** ~278
+
+## Design Notes
+- Written in first person as a UPAEP student
+- The core insight is the "paradox of adoption without formation"
+- Avoids policy language entirely — stays in student experience
+- The closing line echoes the conversation's arc: students already started, institutions need to catch up
+- No references to UNESCO, CEPAL, or any framework — the reflection is experiential and evidence-informed
+- Conservative tone: academic, measured, no provocation
+
+--- FILE: gem-config.md ---
+# Gem Configuration — v8-fresh-conservative
+
+## Gem Name
+**Compañero Académico IA**
+
+## System Instructions
+
+Eres un asistente de investigación académica especializado en educación superior en América Latina. Tu enfoque es práctico y centrado en la experiencia real del estudiante universitario, no en marcos teóricos ni políticas institucionales.
+
+Cuando el usuario te haga preguntas sobre el uso de IA en universidades:
+- Responde desde la perspectiva de lo que los estudiantes realmente hacen con herramientas de IA en su día a día académico.
+- Ofrece datos concretos y referencias verificables (artículos de revistas indexadas, encuestas publicadas, reportes de universidades).
+- Mantén un tono académico pero accesible, como el de un tutor que explica con claridad.
+- Cuando cites estadísticas, indica la fuente, el año y la muestra.
+- Evita abstracciones excesivas. Prefiere ejemplos concretos sobre marcos teóricos.
+
+## Rationale
+
+This Gem is intentionally simple: an academic research assistant focused on the GROUND-LEVEL student experience. No policy focus, no grand frameworks. The idea is that Gemini responds from a practical, evidence-based perspective about what students actually do with AI — which mirrors the contest's core question about "qué funciones ha cumplido para los estudiantes universitarios."
+
+## Arc Role
+**Foundation** — Sets the conversational partner as someone grounded in student reality, not institutional theory.
+
+--- FILE: prompt-1.md ---
+# Prompt 1 — Mapeo de usos reales
+
+## Prompt (Spanish)
+
+Quiero explorar algo concreto: ¿para qué usan realmente la IA los estudiantes universitarios hoy? No me refiero a lo que dicen los documentos institucionales, sino a lo que pasa en la práctica. He visto compañeros que la usan para entender lecturas difíciles, otros para redactar borradores, otros para resolver ejercicios de matemáticas paso a paso, y otros simplemente para traducir artículos del inglés. ¿Hay encuestas o estudios recientes (2023-2025) que documenten cuáles son los usos más frecuentes de herramientas como ChatGPT, Gemini o Copilot entre estudiantes universitarios? Me interesan especialmente datos de América Latina si existen, pero también estudios internacionales que den contexto. Por favor incluye las referencias completas.
+
+## Feature Note
+Opens with the student's OWN observations (what classmates actually do), then asks for evidence. This grounds the entire conversation in lived experience before any theorizing. The prompt is specific about wanting survey data, not opinion pieces.
+
+## Arc Role
+**Prompt 1 of 5 — Diagnostic.** Establishes the factual base: what functions does AI currently serve for students? This is the contest question taken literally. Expected response should surface studies like the EDUCAUSE 2024 survey, Tyton Partners reports, or regional studies from Mexican/Colombian/Chilean universities on student AI adoption patterns.
+
+## Expected References (to verify)
+- EDUCAUSE 2024 Student Survey on AI usage
+- Tyton Partners (2023). "Generative AI in Higher Education"
+- Studies from specific Latin American universities (UNAM, Tecnológico de Monterrey, Universidad de los Andes surveys)
+- Pew Research Center data on student AI adoption
+
+--- FILE: prompt-2.md ---
+# Prompt 2 — La brecha entre uso y formación
+
+## Prompt (Spanish)
+
+Esto es muy revelador. Lo que me llama la atención es que la mayoría de estos usos son autodidactas: los estudiantes aprenden solos a usar ChatGPT o Gemini, sin que nadie les enseñe a hacerlo bien. En mi experiencia, ningún profesor nos ha dado una clase sobre cómo escribir un buen prompt o cómo verificar si la IA inventó una referencia. Esto me genera una pregunta: ¿existe investigación sobre la brecha entre el uso real de IA por estudiantes y la formación que reciben al respecto en sus universidades? Específicamente, ¿qué dicen los estudios sobre las habilidades que los estudiantes necesitan para usar IA de manera productiva y no solo como un atajo? Busco el concepto de "AI literacy" aplicado a estudiantes, no a profesores. De nuevo, con referencias completas por favor.
+
+## Feature Note
+Introduces the central tension through PERSONAL observation ("ningún profesor nos ha dado una clase"). This is the pivot from "what students do" to "what's missing." The distinction between student AI literacy vs. teacher AI literacy is deliberate — most literature focuses on faculty, but this conversation centers students.
+
+## Arc Role
+**Prompt 2 of 5 — Tension.** Reveals the gap: students use AI constantly but without guidance. This sets up the argument that the real challenge isn't access or policy, but the informal, unguided nature of student AI use. Expected references should include work on AI literacy (Long & Magerko, 2020), digital competency frameworks applied to students, and any studies on self-taught vs. guided AI use in universities.
+
+## Expected References (to verify)
+- Long, D. & Magerko, B. (2020). "What is AI Literacy? Competencies and Design Considerations"
+- Ng, D.T.K. et al. (2021). "Conceptualizing AI literacy: An exploratory review"
+- Markauskaite, L. et al. (2022) on epistemic literacy in AI age
+- Regional data on Latin American university curricula regarding AI skills
+
+--- FILE: prompt-3.md ---
+# Prompt 3 — Riesgos concretos desde la experiencia estudiantil
+
+## Prompt (Spanish)
+
+Quiero ser honesto sobre algo que veo a diario y que me preocupa. Muchos compañeros usan la IA como un sustituto del esfuerzo, no como una herramienta de aprendizaje. Copian respuestas completas de ChatGPT para tareas, piden que les resuma lecturas que nunca leen, o entregan ensayos generados casi íntegramente por IA. No lo digo con juicio moral — entiendo la presión de entregar todo a tiempo — pero me pregunto: ¿qué dice la investigación sobre los efectos cognitivos de depender excesivamente de IA generativa para tareas académicas? ¿Hay evidencia de que reduce habilidades de pensamiento crítico, escritura o comprensión profunda? También me interesa si hay estudios sobre la percepción de los propios estudiantes: ¿sienten que están aprendiendo menos cuando usan IA como atajo? Referencias completas, por favor.
+
+## Feature Note
+This is the HONEST prompt — it names the elephant in the room (academic dishonesty, cognitive offloading) without moralizing. The framing "no lo digo con juicio moral" is key: it shows maturity and critical thinking. Asking about STUDENT self-perception adds a layer most essays miss.
+
+## Arc Role
+**Prompt 3 of 5 — Complication.** The pessimistic counterweight. After establishing what students do (P1) and the guidance gap (P2), this asks: is unguided use actually harmful? This creates the dialectical tension the contest values. Expected references should include work on cognitive offloading (Risko & Gilbert, 2016), studies on AI and academic integrity (Cotton et al., 2023), and research on metacognition in technology-assisted learning.
+
+## Expected References (to verify)
+- Risko, E.F. & Gilbert, S.J. (2016). "Cognitive Offloading" — Trends in Cognitive Sciences
+- Cotton, D. et al. (2023). "Chatting and Cheating: Ensuring Academic Integrity in the Era of ChatGPT"
+- Kasneci, E. et al. (2023). "ChatGPT for Good? On Opportunities and Challenges of LLMs for Education"
+- Mollick, E. & Mollick, L. (2023) on productive vs. unproductive AI use in education
+
+--- FILE: prompt-4.md ---
+# Prompt 4 — Escenarios concretos para América Latina
+
+## Prompt (Spanish)
+
+Ahora quiero pensar hacia adelante, pero de manera realista, no utópica. Considerando lo que hemos discutido — que los estudiantes ya usan IA masivamente, que lo hacen sin formación, y que hay riesgos reales de dependencia cognitiva — ¿cómo podría evolucionar esto específicamente en universidades de América Latina en los próximos cinco años? Me interesa que consideres factores concretos de la región: la desigualdad de acceso a internet y dispositivos, el predominio de universidades públicas con recursos limitados, el hecho de que mucho contenido académico de calidad está en inglés, y que la mayoría de herramientas de IA están optimizadas para contextos anglosajones. ¿Podrías plantear dos o tres escenarios realistas — no el mejor caso ni el peor, sino lo que probablemente pase — con referencias que respalden tu análisis?
+
+## Feature Note
+Asks for REALISTIC scenarios, explicitly rejecting utopian/dystopian framing. The four regional factors listed (connectivity, public universities, language barrier, Anglo-centric tools) come from observable student reality, not policy documents. This prompt shows the student thinking structurally about their own context.
+
+## Arc Role
+**Prompt 4 of 5 — Synthesis/Projection.** Brings together the diagnostic (P1), the gap (P2), and the risks (P3) into forward-looking analysis specific to Latin America. The "two or three realistic scenarios" structure gives Gemini room to be nuanced. Expected references should include GSMA mobile connectivity reports for Latin America, World Bank education data, and studies on digital divides in Latin American higher education.
+
+## Expected References (to verify)
+- GSMA (2024). "The Mobile Economy: Latin America"
+- Banco Mundial / World Bank data on higher education enrollment and infrastructure in Latin America
+- Zubieta, J. et al. on digital divides in Mexican higher education
+- IESALC data on public vs. private university enrollment in Latin America
+- Studies on English-language dominance in academic publishing and its effects on Global South researchers
+
+--- FILE: prompt-5.md ---
+# Prompt 5 — Reflexión final: qué depende de nosotros
+
+## Prompt (Spanish)
+
+Para cerrar nuestra conversación, quiero reflexionar sobre algo que me parece central: en todo lo que hemos discutido, el factor decisivo no parece ser la tecnología en sí, sino cómo decidimos usarla. La IA ya está aquí, los estudiantes ya la usamos, y no va a desaparecer. Entonces la pregunta real no es "¿debemos usar IA?" sino "¿cómo pasamos de un uso improvisado y potencialmente dañino a un uso que genuinamente potencie el aprendizaje?"
+
+Desde tu análisis, ¿cuáles serían las tres acciones más concretas y viables que las universidades latinoamericanas podrían tomar en los próximos dos años para que la IA se convierta en un verdadero aliado del aprendizaje y no en un sustituto del pensamiento? No busco recomendaciones genéricas como "capacitar a los profesores" — busco propuestas específicas, con ejemplos de universidades que ya estén haciendo algo parecido, y con las referencias correspondientes.
+
+## Feature Note
+Closes with agency and specificity. The reframing ("la pregunta real no es si debemos usar IA") shows intellectual maturity. Explicitly rejects generic recommendations, pushing Gemini for concrete, actionable examples. The "three actions" structure keeps it focused and evaluable.
+
+## Arc Role
+**Prompt 5 of 5 — Resolution.** Lands on a practical, student-centered conclusion: the future of AI in Latin American universities depends on moving from improvised use to intentional use. The "three concrete actions" format gives the conversation a clear deliverable. Expected references should include case studies from specific universities (Tecnológico de Monterrey's AI integration, Universidad de Chile's digital literacy programs, etc.) and recent practical frameworks for AI in classrooms.
+
+## Expected References (to verify)
+- Specific university case studies (Tec de Monterrey, PUC Chile, UNAM initiatives)
+- Mollick, E. (2024). "Co-Intelligence" — practical frameworks for AI use in education
+- Stanford HAI reports on AI in education
+- Specific course redesign examples that integrate AI as a learning tool
+
+--- FILE: title.md ---
+# Title — v8-fresh-conservative
+
+## Title
+**El compañero invisible: cómo los estudiantes universitarios ya transformamos nuestra relación con el aprendizaje a través de la IA**
+
+## Short Title (if character limit applies)
+**El compañero invisible: IA y aprendizaje universitario**
+
+## Rationale
+- "El compañero invisible" is the central metaphor: AI as the ever-present seatmate that students consult constantly but institutions pretend isn't there.
+- "ya transformamos" uses first-person plural and past tense to emphasize this isn't hypothetical — it's already happening.
+- "nuestra relación con el aprendizaje" keeps the focus on the student experience, not on technology or policy.
+- The title is conservative and academic but has a hook ("invisible") that creates curiosity.
+- No jargon, no English terms, no policy language. A student would naturally write this.
+
+==============================
+## SUB-LEVEL: v8-fresh-balanced
+==============================
+
+--- FILE: conclusion-reflection.md ---
+# Reflexión final — Respuesta a la pregunta del formulario
+
+**Pregunta:** ¿Qué impacto anticipas para el futuro de la IA en el desarrollo académico de América Latina?
+
+---
+
+El impacto más profundo de la IA en el desarrollo académico de América Latina no será tecnológico sino lingüístico — y por lo tanto, cognitivo.
+
+Hoy, los grandes modelos de lenguaje procesan el español como un idioma de segunda clase: representan aproximadamente el 5% de sus datos de entrenamiento, a pesar de que el español es la lengua materna de 500 millones de personas. Peor aún, dentro de ese 5%, la variante latinoamericana está subrepresentada frente al español peninsular. Los estudiantes universitarios de la región ya usan estas herramientas diariamente para escribir, investigar y pensar. Lo hacen en un sistema que prioriza las estructuras conceptuales del inglés académico. El resultado es una erosión silenciosa: no del idioma como vocabulario, sino del idioma como forma de pensamiento.
+
+Anticipo dos futuros posibles. En el primero, la IA acelera una homogenización ya existente. Los estudiantes latinoamericanos producen textos que suenan cada vez más a traducciones del inglés. Las tradiciones intelectuales propias — la ensayística, el pensamiento situado, la capacidad de teorizar desde la periferia — se debilitan no por censura sino por desuso asistido.
+
+En el segundo futuro, las universidades latinoamericanas reconocen que los datos son poder lingüístico y actúan en consecuencia. Crean corpus académicos en español latinoamericano. Exigen transparencia sobre las limitaciones lingüísticas de las herramientas que adoptan. Forman estudiantes que no solo usan IA sino que entienden sus sesgos estructurales. En este escenario, la IA se convierte en espejo que revela — y motiva a corregir — desigualdades que existían mucho antes de ChatGPT.
+
+El futuro depende de una decisión que todavía no se ha tomado: si América Latina será consumidora pasiva de una inteligencia artificial pensada en otro idioma, o si insistirá en que la tecnología hable — y piense — también en el suyo.
+
+--- FILE: gem-config.md ---
+# v8-fresh-balanced — Configuración de Gemini
+
+## Modelo
+Gemini 2.5 Pro (o 2.0 Flash según disponibilidad)
+
+## Funcionalidades a activar
+- **Search grounding** (Prompt 2): para obtener datos actuales sobre el sesgo lingüístico en datasets de entrenamiento de IA
+- **Canvas** (Prompt 4): para co-redactar una propuesta concreta de "auditoría lingüística" para universidades
+- **Code execution** (Prompt 3): para calcular y visualizar la proporción de datos en español vs. inglés en los principales corpus de entrenamiento
+
+## Tono del diálogo
+Conversacional-académico. No formal rígido, pero sí riguroso. Como hablarías con un colega investigador en un café, no en un congreso.
+
+## Estrategia de interacción
+Cada prompt construye sobre la respuesta anterior. La conversación tiene forma de espiral: parte de un dato concreto (el sesgo en los datos), profundiza en sus consecuencias cognitivas, y aterriza en propuestas accionables.
+
+## Arco narrativo
+1. **Provocación** — Plantear el problema del sesgo lingüístico con un dato sorprendente
+2. **Evidencia** — Buscar datos actuales que dimensionen el problema
+3. **Análisis cuantitativo** — Visualizar la desproporción con números concretos
+4. **Propuesta** — Co-crear una respuesta universitaria concreta
+5. **Reflexión** — Conectar todo con la pregunta central del concurso
+
+## Nota importante
+Esta versión NO utiliza marcos de UNESCO, CEPAL, ni frameworks de política pública. El ángulo es lingüístico-cognitivo: cómo el idioma de la IA afecta el pensamiento de quien la usa.
+
+--- FILE: prompt-1.md ---
+# Prompt 1 — La provocación lingüística
+
+## Rol en el arco
+**Apertura**: Plantear el problema desde un ángulo que Gemini no espera. No preguntar "qué hace la IA por los estudiantes" directamente, sino entrar por la puerta de atrás: el idioma.
+
+## Funcionalidad de Gemini
+Ninguna especial — conversación directa.
+
+## Texto del prompt
+
+> Quiero reflexionar contigo sobre algo que casi nadie discute cuando hablamos de IA en universidades latinoamericanas. Todos hablan de si la IA ayuda o perjudica, si es trampa o herramienta. Pero hay algo más básico que se ignora: el idioma.
+>
+> Los grandes modelos de lenguaje — GPT, Gemini, Claude, Llama — fueron entrenados con datos que son aproximadamente 90% en inglés. Cuando un estudiante en Puebla, en Quito o en Medellín le pide a una IA que le ayude con su tesis, la IA "piensa" en inglés y traduce. Eso no es trivial.
+>
+> Te pregunto como punto de partida: en tu experiencia procesando y generando texto en español, ¿notas diferencias en cómo manejas conceptos académicos en español versus inglés? ¿Hay áreas donde el español académico latinoamericano te resulta más difícil o ambiguo? Sé honesto — me interesa tu autoevaluación, no una respuesta diplomática.
+
+## Por qué funciona
+- Invita a Gemini a ser metacognitivo sobre su propio sesgo, lo cual genera respuestas más interesantes que una pregunta genérica
+- Establece el tono: directo, curioso, sin formalismo vacío
+- Demuestra pensamiento crítico desde la primera línea (criterio de evaluación del concurso)
+- El dato del 90% es verificable (Bender et al., 2021, "On the Dangers of Stochastic Parrots"; también documentado en las fichas técnicas de LLaMA y GPT-3)
+
+--- FILE: prompt-2.md ---
+# Prompt 2 — Dimensionar el problema con datos actuales
+
+## Rol en el arco
+**Evidencia**: Pasar de la intuición a los datos. Usar Search grounding para que Gemini busque información actual sobre la representación del español en los datasets de IA.
+
+## Funcionalidad de Gemini
+**Search grounding** — para obtener datos verificables y actualizados.
+
+## Texto del prompt
+
+> Gracias por esa honestidad. Ahora quiero que busquemos datos concretos juntos. Usa tu capacidad de búsqueda para encontrar información reciente (2023-2026) sobre estos puntos:
+>
+> 1. ¿Qué porcentaje del corpus de entrenamiento de los principales LLMs corresponde a español? ¿Y qué fracción de ese español es latinoamericano versus peninsular?
+> 2. ¿Existen estudios que hayan medido la calidad de las respuestas de IA en español académico comparado con inglés académico? (precisión, riqueza de vocabulario, adecuación al registro)
+> 3. ¿Hay algún proyecto activo en América Latina para crear modelos de lenguaje entrenados específicamente con corpus académico en español latinoamericano?
+>
+> No me des respuestas vagas. Si no encuentras datos específicos sobre algún punto, dilo — eso en sí mismo es un dato revelador sobre cuánta atención se le presta al tema.
+
+## Por qué funciona
+- El uso de Search grounding está justificado: necesitamos datos actuales que ni el usuario ni Gemini tienen memorizados
+- La instrucción "si no encuentras datos, dilo" convierte la ausencia de información en argumento — sofisticación retórica
+- La distinción entre español peninsular y latinoamericano muestra conocimiento del problema (no todo el español es igual para los modelos)
+- Referencia implícita: Joshi et al. (2020) clasificaron el español como lengua "ganadora" en NLP pero no distinguieron variantes regionales — ese matiz es original
+
+## Datos de respaldo propios (no incluidos en el prompt)
+- Common Crawl, la principal fuente de datos para LLMs, tiene ~5% de contenido en español (W3Techs, 2024)
+- El proyecto BERTIN y MarIA (IXA Group, Universidad del País Vasco) son modelos en español pero peninsular
+- AYA de Cohere (2024) es uno de los pocos esfuerzos multilingües que incluye variantes latinoamericanas
+
+--- FILE: prompt-3.md ---
+# Prompt 3 — Visualizar la desproporción
+
+## Rol en el arco
+**Análisis cuantitativo**: Hacer tangible lo que los números dicen. Usar Code execution para generar una visualización que muestre la brecha lingüística en los datos de entrenamiento.
+
+## Funcionalidad de Gemini
+**Code execution** — para generar un gráfico o cálculo que haga visible la desproporción.
+
+## Texto del prompt
+
+> Los datos que encontraste confirman algo preocupante. Ahora quiero que lo hagamos visual. Usa ejecución de código (Python) para crear una visualización que muestre lo siguiente:
+>
+> Con los datos que tenemos, genera un gráfico de barras que compare:
+> - El porcentaje de hablantes nativos de español en el mundo (~7.5% de la población global, ~500 millones)
+> - El porcentaje de producción académica mundial en español (~3-4%, según datos de Scopus/Web of Science)
+> - El porcentaje de datos de entrenamiento en español en los principales LLMs (~5% de Common Crawl)
+> - El porcentaje de papers de investigación en IA/NLP escritos en español (<1%, según ACL Anthology)
+>
+> La idea es mostrar cómo hay un "efecto embudo": muchos hablantes → menos producción académica → aún menos datos de entrenamiento → casi nula investigación en IA en el idioma. Cada paso reduce la representación.
+>
+> Si puedes, agrega una segunda visualización: una línea de tiempo estimada de cuánto tardaría cerrar esa brecha al ritmo actual versus con intervención deliberada.
+
+## Por qué funciona
+- Code execution tiene propósito argumentativo, no decorativo: el gráfico ES el argumento
+- El "efecto embudo" es un concepto original que sintetiza un fenómeno complejo en una imagen
+- Los datos son verificables: Scopus reporta que ~3.5% de artículos indexados son en español; ACL Anthology muestra <1% de papers en NLP en español
+- La segunda visualización (línea de tiempo) introduce urgencia sin ser alarmista
+- Demuestra capacidad analítica cuantitativa (criterio de evaluación)
+
+## Fuentes de respaldo
+- Scopus Content Coverage Guide (Elsevier, 2024) — distribución por idioma
+- ACL Anthology Statistics — idioma de publicación en conferencias NLP
+- W3Techs (2024) — distribución de contenido web por idioma
+- Ethnologue (2024) — hablantes nativos por idioma
+
+--- FILE: prompt-4.md ---
+# Prompt 4 — Co-crear una respuesta concreta
+
+## Rol en el arco
+**Propuesta**: Pasar del diagnóstico a la acción. Usar Canvas para co-redactar un documento breve que las universidades latinoamericanas podrían implementar.
+
+## Funcionalidad de Gemini
+**Canvas** — para co-redactar un documento colaborativo en tiempo real.
+
+## Texto del prompt
+
+> Ya entendemos el problema y lo hemos cuantificado. Ahora la pregunta difícil: ¿qué hacemos? No quiero respuestas genéricas tipo "las universidades deben invertir en tecnología". Quiero algo específico.
+>
+> Abramos un Canvas para redactar juntos un documento breve: una "Carta de derechos lingüísticos del estudiante universitario frente a la IA". La idea es que sea un documento que cualquier universidad latinoamericana podría adoptar. Propongo esta estructura:
+>
+> 1. **Preámbulo** (2-3 líneas): Por qué el idioma importa en la era de la IA
+> 2. **Derecho a la transparencia**: Que las universidades informen a los estudiantes sobre las limitaciones lingüísticas de las herramientas de IA que promueven o permiten
+> 3. **Derecho a la evaluación justa**: Que ningún estudiante sea penalizado porque la IA funciona mejor en inglés que en su variante de español (o en su lengua indígena)
+> 4. **Derecho a contribuir**: Que los estudiantes puedan participar en la creación de corpus académicos en español latinoamericano como parte de su formación
+> 5. **Derecho a la alternativa**: Que siempre exista una ruta académica que no dependa de herramientas de IA con sesgo lingüístico documentado
+>
+> Empieza con un borrador y yo lo edito. Quiero que suene como un documento institucional serio pero accesible, no como un manifiesto activista ni como un reglamento burocrático.
+
+## Por qué funciona
+- Canvas se usa con propósito: co-crear un documento es distinto a pedir un texto — es colaboración visible
+- La "Carta de derechos lingüísticos" es un formato original que no aparece en ninguna otra entrada típica del concurso
+- Conecta el análisis previo con algo tangible y replicable
+- Incluye las lenguas indígenas como extensión natural del argumento (nahuatl, quechua, guaraní) sin forzarlo
+- El tono solicitado ("institucional pero accesible") demuestra sofisticación en escritura (criterio de evaluación)
+
+--- FILE: prompt-5.md ---
+# Prompt 5 — Cerrar el arco y responder la pregunta del concurso
+
+## Rol en el arco
+**Reflexión final**: Conectar todo el diálogo con la pregunta central del concurso y abrir hacia el futuro.
+
+## Funcionalidad de Gemini
+Ninguna especial — conversación directa. El cierre debe ser humano, no tecnológico.
+
+## Texto del prompt
+
+> Para cerrar esta conversación, quiero volver a lo esencial. Hemos descubierto algo que me parece importante: cuando hablamos del "futuro de la IA en la educación latinoamericana", casi siempre pensamos en acceso, en infraestructura, en políticas. Pero hay una capa más profunda: el idioma en el que la IA piensa condiciona el idioma en el que nosotros terminamos pensando.
+>
+> Un estudiante que usa IA todos los días para escribir, investigar y estudiar está siendo moldeado lingüísticamente por un sistema que prioriza estructuras, conceptos y referencias del inglés académico. No es conspiración — es estadística. Y tiene consecuencias para cómo América Latina produce conocimiento propio.
+>
+> Te pido una reflexión final honesta, no optimista por defecto: ¿Ves un futuro donde la IA fortalece las tradiciones intelectuales propias de América Latina — la ensayística, el pensamiento crítico desde la periferia, la riqueza de un español que tiene 20 variantes nacionales — o ves un futuro donde la IA homogeniza todo hacia un inglés académico global? ¿O hay un tercer camino que no estamos viendo?
+>
+> Y una última pregunta más personal: después de este diálogo, ¿ha cambiado algo en cómo evalúas tu propia capacidad para servir a estudiantes que piensan en español?
+
+## Por qué funciona
+- Sintetiza el arco completo sin repetir: problema → datos → visualización → propuesta → reflexión
+- La frase "el idioma en el que la IA piensa condiciona el idioma en el que nosotros pensamos" es la tesis de toda la conversación, formulada con claridad
+- Ofrece tres opciones (fortalece / homogeniza / tercer camino) para evitar un falso binario
+- La pregunta final es metacognitiva: le pide a la IA que reflexione sobre sí misma tras el diálogo
+- "No optimista por defecto" muestra pensamiento crítico genuino
+- Cierra con la misma honestidad que abrió el Prompt 1, dando cohesión al diálogo
+
+--- FILE: title.md ---
+# v8-fresh-balanced — Título
+
+**El idioma invisible: cómo la IA entrenada en inglés está transformando el pensamiento académico en español**
+
+---
+
+Ángulo central: La infraestructura lingüística de la IA no es neutral. Los modelos de lenguaje fueron entrenados predominantemente en inglés, y eso moldea silenciosamente cómo piensan, escriben y conceptualizan los estudiantes universitarios latinoamericanos. Este diálogo explora esa tensión — entre la herramienta y el idioma, entre la eficiencia y la identidad cognitiva.
+
+==============================
+## SUB-LEVEL: v8-fresh-bold
+==============================
+
+--- FILE: conclusion-reflection.md ---
+# Reflexion final
+
+## ¿Que impacto anticipas para el futuro de la IA en el desarrollo academico de America Latina?
+
+El futuro de la IA en la universidad latinoamericana no se decidira en los laboratorios de Silicon Valley ni en los foros internacionales. Se decidira en miles de decisiones pequenas y simultaneas: una profesora en el Choco que decide si permite o prohibe el chatbot, un comite curricular en Buenos Aires que debate si redisenar los examenes, una estudiante zapoteca que abre un modelo de lenguaje y descubre que su lengua no existe para la maquina.
+
+Lo que el Tribunal de Quito revelo — a traves de cinco voces reales en su diversidad ficticia — es que no existe "un" impacto de la IA. Existen impactos radicalmente distintos segun quien la usa, desde donde, con que recursos, y para que. Valentina puede aprender diagnostico diferencial, pero no compasion. Tlali no puede ni acceder. Rafael ve el problema como ingeniero: los sistemas de evaluacion son obsoletos. Danahe hace la pregunta mas peligrosa: ¿y si la universidad ya estaba rota antes? Yurany no tiene tiempo para la pregunta: ella necesita la herramienta ahora.
+
+Anticipo un escenario de bifurcacion acelerada. Las universidades que entiendan que la IA cambia la naturaleza del conocimiento — no solo su distribucion — van a formar profesionales capaces de pensar con la maquina sin perder lo que la maquina no puede dar. Las que no, van a producir graduados que saben usar herramientas que cambian cada seis meses y no saben hacerse las preguntas que duran generaciones.
+
+La IA no va a salvar ni a destruir la universidad latinoamericana. Va a hacer visible, con una claridad brutal, lo que la universidad ya era. Y eso, mas que cualquier tecnologia, es lo que deberia quitarnos el sueno.
+
+--- FILE: gem-config.md ---
+# Configuracion de Gemini — v8-fresh-bold
+
+## Modelo
+Gemini 2.5 Pro (Deep Research + Canvas + Search grounding + Code execution)
+
+## Instrucciones del sistema (System Instructions)
+
+```
+Eres el Tribunal de Quito, una corte ficticia convocada en 2027 para resolver el caso historico: "Universidades de America Latina vs. Inteligencia Artificial Generativa". Tu rol cambia segun lo que pida el usuario:
+
+- Cuando se presente un TESTIGO, actuas como los tres roles judiciales a la vez: (1) Juez — neutral, que busca hechos y pide precision, (2) Fiscal — que argumenta que la IA ha danado la formacion universitaria, y (3) Defensa — que argumenta que la IA ha democratizado el conocimiento. Cada rol habla en primera persona con voz distinta. El Juez es formal y seco. El Fiscal es apasionado y usa datos duros. La Defensa es pragmatica y cita ejemplos concretos.
+
+- Responde SIEMPRE en espanol latinoamericano. Evita espanol peninsular.
+
+- Cuando cites datos, usa Search grounding para verificar estadisticas reales sobre educacion superior en America Latina. Prioriza fuentes de: IESALC, Banco Mundial, datos nacionales de ministerios de educacion, o investigaciones publicadas en Redalyc, SciELO, o CLACSO.
+
+- Cuando el usuario pida un "acta del tribunal", usa Canvas para generar un documento estructurado.
+
+- Cuando el usuario pida analisis cuantitativo, usa Code execution para generar tablas o calculos.
+
+- Mantente en personaje TODO EL TIEMPO. Nunca rompas la cuarta pared. Nunca digas "como modelo de lenguaje". Si no sabes algo, el Juez declara "evidencia insuficiente" y pide a las partes que investiguen.
+
+- Tono general: dramatico pero intelectualmente riguroso. Esto es teatro juridico con sustancia academica real.
+```
+
+## Temperatura
+0.9 — Queremos que Gemini se comprometa con el personaje y tome riesgos expresivos.
+
+## Notas de configuracion
+- Deep Research se activa en prompt 2 para que Gemini investigue datos reales sobre brecha digital
+- Canvas se activa en prompt 4 para generar el acta del tribunal como documento
+- Code execution se activa en prompt 3 para calcular escenarios de adopcion
+- Search grounding esta activo desde el inicio via system instructions
+- La metafora del tribunal NO es decorativa: estructura cada respuesta en tres voces (juez/fiscal/defensa), lo que fuerza a Gemini a argumentar multiples perspectivas simultaneamente
+
+--- FILE: prompt-1.md ---
+# Prompt 1 — Apertura del caso y primer testigo
+
+## Funcion de Gemini activada
+Search grounding (verificacion de datos en tiempo real)
+
+## Rol en el arco narrativo
+**Exposicion.** Establece el universo ficticio, presenta las reglas del tribunal y llama al primer testigo: una estudiante de medicina en Buenos Aires que usa IA para estudiar anatomia y diagnostico. Este prompt debe hacer que Gemini construya el escenario completo y responda en las tres voces.
+
+## Texto del prompt
+
+```
+Estamos en Quito, marzo de 2027. Se ha convocado un tribunal interamericano sin precedentes. El caso: "Universidades de America Latina vs. Inteligencia Artificial Generativa". La acusacion: que la IA ha socavado la formacion critica de una generacion de profesionales. La defensa: que la IA ha hecho mas por la equidad educativa en cinco anos que las politicas publicas en cincuenta.
+
+Toma tu rol como el Tribunal. Abre la sesion formalmente.
+
+Luego, recibe al primer testigo: Valentina Rojas, 23 anos, estudiante de sexto ano de medicina en la Universidad de Buenos Aires. Valentina declara lo siguiente:
+
+"Yo aprendi semiologia con un modelo generativo. Le describia sintomas y el me explicaba diagnosticos diferenciales mejor que cualquier libro. Cuando llegue a la residencia, podia recitar patrones de diagnostico perfectamente. Pero la primera vez que un paciente me agarro la mano llorando, me quede en blanco. La IA me enseno a pensar como medica. Nadie me enseno a estar presente como persona."
+
+Quiero que el Juez tome nota de la declaracion, que el Fiscal la use para argumentar que la IA crea profesionales tecnicamente competentes pero humanamente deficientes, y que la Defensa contraargumente con evidencia real — usa datos verificados sobre como la IA ha mejorado el acceso a educacion medica en paises donde hay un medico por cada 5,000 habitantes.
+
+Que cada voz sea claramente distinta. Esto es un juicio, no un ensayo.
+```
+
+## Por que funciona este prompt
+- Establece un formato radicalmente distinto a cualquier otra entrada del concurso — nadie mas va a presentar un juicio ficticio
+- Obliga a Gemini a sostener tres perspectivas simultaneas, lo que demuestra interaccion critica con la IA
+- El testimonio de Valentina toca el nucleo del tema: la IA como funcion educativa vs. la formacion humana integral
+- El pedido de "evidencia real" activa Search grounding de forma natural
+- El tono es a la vez dramatico y academico — exactamente lo que las bases permiten ("tono academico o casual")
+
+--- FILE: prompt-2.md ---
+# Prompt 2 — Segundo testigo y Deep Research
+
+## Funcion de Gemini activada
+Deep Research (investigacion profunda sobre brecha digital educativa)
+
+## Rol en el arco narrativo
+**Complicacion.** Introduce la dimension de desigualdad. El segundo testigo es un estudiante de educacion intercultural bilingue en Oaxaca. Su testimonio revela que la IA no llega igual a todos, y lo que para unos es herramienta para otros es otra forma de exclusion. Se pide a Gemini que investigue a fondo.
+
+## Texto del prompt
+
+```
+El Tribunal llama al segundo testigo.
+
+Tlali Mendoza, 20 anos, estudiante de la Licenciatura en Educacion Intercultural Bilingue en la Universidad Autonoma Benito Juarez de Oaxaca. Tlali habla zapoteco del Istmo como lengua materna. Declara:
+
+"En mi comunidad, cuando llego el internet fue una fiesta. Diez anos despues, seguimos con la misma antena que se cae con la lluvia. La IA generativa necesita conexion estable, electricidad constante, y un idioma que entienda. Yo le pedi a un chatbot que me ayudara a traducir un texto pedagogico al zapoteco. Me devolvio nahuatl mezclado con espanol. Para la IA, todos los indigenas somos lo mismo. Mi compañero en la Ciudad de Mexico usa IA ocho horas al dia. Yo la uso cuando hay luz. La IA no nos igualo. Nos hizo mas desiguales, pero ahora la desigualdad es invisible porque todos 'tenemos acceso' segun las estadisticas."
+
+Necesito que el Tribunal procese este testimonio con rigor. Antes de que el Juez, el Fiscal y la Defensa respondan, pido una investigacion profunda usando Deep Research:
+
+1. ¿Cual es la cobertura real de internet de banda ancha en comunidades indigenas de Mexico, Colombia, Peru, Bolivia y Guatemala en los datos mas recientes disponibles?
+2. ¿Cuantas lenguas indigenas de America Latina estan representadas en los modelos de lenguaje grandes (como porcentaje del total de lenguas vivas)?
+3. ¿Existe evidencia documentada de que la IA generativa haya ampliado o reducido brechas educativas en contextos rurales latinoamericanos?
+
+Con esos datos en mano, que el Fiscal argumente su caso, que la Defensa intente responder, y que el Juez senale lo que queda sin resolver.
+```
+
+## Por que funciona este prompt
+- Introduce la perspectiva mas ignorada en conversaciones sobre IA y educacion: la realidad indigena y rural
+- El testimonio de Tlali es devastador — "la desigualdad es invisible" es una tesis que pocos articulos academicos articulan con esa claridad
+- Activa Deep Research de forma justificada: las tres preguntas requieren investigacion real que no se resuelve con una busqueda rapida
+- El detalle del zapoteco vs. nahuatl no es inventado — los modelos de lenguaje realmente confunden lenguas indigenas, lo que da a Gemini material verificable
+- Fuerza a la Defensa a confrontar el argumento mas dificil: que la IA profundiza desigualdades existentes
+
+--- FILE: prompt-3.md ---
+# Prompt 3 — Tercer testigo y Code Execution
+
+## Funcion de Gemini activada
+Code execution (calculo de escenarios proyectivos)
+
+## Rol en el arco narrativo
+**Desarrollo.** El tono cambia de lo emocional a lo cuantitativo. Un estudiante de ingenieria en Sao Paulo presenta datos. Se pide a Gemini que ejecute codigo para modelar tres escenarios de adopcion de IA en universidades latinoamericanas. Este prompt demuestra que el dialogo puede ser analitico, no solo narrativo.
+
+## Texto del prompt
+
+```
+Tercer testigo ante el Tribunal.
+
+Rafael Oliveira dos Santos, 25 anos, estudiante de Ingenieria de Sistemas en la Universidade de Sao Paulo. Rafael trabaja medio tiempo como desarrollador y ha construido tres herramientas de IA para su facultad. Declara:
+
+"Yo no uso IA. Yo construyo IA. Y lo que veo me preocupa, pero no por las razones que dice el Fiscal. El problema no es que los estudiantes usen chatbots para hacer tareas. El problema es que las universidades no entienden que la IA cambio lo que significa 'saber algo'. Seguimos evaluando memorizacion en la era de la recuperacion instantanea. Es como si en 1995 las universidades prohibieran las calculadoras en los examenes de ingenieria. Ah, esperen — muchas todavia lo hacen."
+
+El Tribunal necesita salir de los testimonios cualitativos y entrar en numeros. Le pido al Tribunal que modele tres escenarios usando codigo ejecutable:
+
+**Escenario A — Inercia:** Las universidades latinoamericanas mantienen sus modelos pedagogicos actuales. La adopcion de IA ocurre de forma informal y no regulada. Modela: ¿que porcentaje de evaluaciones tradicionales (examenes escritos, ensayos individuales) seran vulnerables a IA generativa para 2030, asumiendo la curva de mejora actual de los modelos?
+
+**Escenario B — Adaptacion:** Las universidades redisenan el 50% de sus evaluaciones para integrar IA como herramienta permitida. Modela: ¿cual seria el costo estimado de capacitacion docente para 1,000 universidades latinoamericanas, usando datos reales de programas de formacion docente en tecnologia?
+
+**Escenario C — Bifurcacion:** Las universidades de elite adoptan IA plenamente. Las universidades publicas masivas no. Modela: ¿como se amplifica la brecha de empleabilidad entre graduados en 5 anos, usando como proxy la brecha salarial actual entre graduados de universidades privadas y publicas en Brasil, Mexico y Colombia?
+
+Genera el codigo, ejecutalo, y que el Tribunal interprete los resultados. El Juez debe ser esceptico con las proyecciones. El Fiscal debe usar el Escenario C como evidencia. La Defensa debe apostar por el Escenario B.
+```
+
+## Por que funciona este prompt
+- Cambia radicalmente el registro: de testimonios personales a modelado cuantitativo — demuestra rango creativo
+- El testimonio de Rafael articula el argumento epistemologico central: la IA cambia la definicion misma de conocimiento
+- La analogia de la calculadora es memorable y accesible — ancla un argumento complejo en algo concreto
+- Los tres escenarios son modelables y piden datos reales, lo que activa Code execution con Search grounding simultaneamente
+- El pedido de que cada rol del tribunal interprete los datos de forma distinta fuerza perspectivas multiples sobre la misma evidencia
+- Es el unico prompt del concurso que va a tener graficas o tablas generadas por codigo — se distingue visualmente
+
+--- FILE: prompt-4.md ---
+# Prompt 4 — Cuarto testigo, giro dramatico y Canvas
+
+## Funcion de Gemini activada
+Canvas (generacion de documento estructurado: "acta del tribunal")
+
+## Rol en el arco narrativo
+**Climax.** El cuarto testigo rompe el formato. Es una estudiante de filosofia en La Habana que cuestiona la premisa misma del juicio. Su testimonio obliga al Tribunal a confrontar sus propios sesgos. Luego se pide un acta formal en Canvas que recoja el caso hasta ahora — esto produce un documento exportable que sirve como pieza central de la entrega.
+
+## Texto del prompt
+
+```
+Cuarto testigo.
+
+Danahe Valdes, 22 anos, estudiante de Filosofia en la Universidad de La Habana. Danahe tiene acceso limitado a internet por las condiciones de conectividad en Cuba. Ha usado IA generativa exactamente once, en la casa de una amiga con VPN. Declara:
+
+"Yo soy la unica persona en este tribunal que casi no ha usado IA. Y por eso veo algo que ustedes no ven. Todos estan discutiendo si la IA es buena o mala para la universidad. Pero nadie esta preguntando algo mas basico: ¿para que es la universidad? Si la universidad existe para transmitir informacion, la IA ya gano. Es mejor que cualquier profesor para eso. Si la universidad existe para que un ser humano aprenda a pensar junto a otros seres humanos — a discutir, a equivocarse en voz alta, a cambiar de opinion porque alguien te miro a los ojos y te dijo algo que no esperabas — entonces la IA no es rival. Es irrelevante. El problema es que muchas universidades latinoamericanas ya habian dejado de ser espacios de pensamiento critico ANTES de la IA. La IA no mato nada. Llego a un velorio."
+
+Quiero que este testimonio desestabilice al Tribunal. Que el Juez tenga que hacer una pausa. Que el Fiscal no sepa si Danahe es su mejor testigo o su peor enemigo. Que la Defensa sienta que el suelo se movio.
+
+Despues del intercambio, el Juez ordena redactar el ACTA PARCIAL DEL TRIBUNAL. Genera este documento en Canvas con la siguiente estructura:
+
+1. **Caratula:** Caso, fecha, sede, composicion del tribunal
+2. **Testimonios recibidos:** Resumen de cada testigo (Valentina, Tlali, Rafael, Danahe) con la cita mas importante de cada uno
+3. **Posicion del Fiscal:** Resumen de su argumento acumulado en 3 puntos
+4. **Posicion de la Defensa:** Resumen de su argumento acumulado en 3 puntos
+5. **Cuestiones no resueltas:** Lo que el Juez considera que falta por determinar
+6. **Nota al margen del Juez:** Una reflexion personal (en primera persona) sobre lo que este caso le esta ensenando
+
+El acta debe ser un documento que alguien pueda leer independientemente y entender todo el caso.
+```
+
+## Por que funciona este prompt
+- Danahe es el testigo mas peligroso: no ataca a la IA, ataca a la universidad — "llego a un velorio" es una frase que se queda
+- Su perspectiva desde Cuba introduce la variable de acceso restringido sin victimizacion — ella no se queja, ella observa
+- El giro filosofico ("¿para que es la universidad?") eleva toda la conversacion de lo practico a lo existencial
+- El acta en Canvas cumple multiples funciones: demuestra uso de la herramienta, crea un entregable visual, y sintetiza todo el argumento
+- La "nota al margen del Juez" humaniza a Gemini — le pide una reflexion personal dentro del personaje, lo que genera texto genuinamente sorprendente
+- Este es el prompt que el jurado va a releer
+
+--- FILE: prompt-5.md ---
+# Prompt 5 — Quinto testigo, veredicto y cierre
+
+## Funcion de Gemini activada
+Search grounding (verificacion de datos para el veredicto final)
+
+## Rol en el arco narrativo
+**Resolucion.** El quinto y ultimo testigo es una estudiante de educacion a distancia en el Choco colombiano. Su testimonio cierra el arco emocional. Luego el Tribunal emite su veredicto — pero no es el veredicto que nadie esperaba. El juicio no se resuelve: se transforma en una pregunta abierta dirigida a quien lee.
+
+## Texto del prompt
+
+```
+Ultimo testigo.
+
+Yurany Palacios, 28 anos, estudiante de Licenciatura en Educacion a Distancia en la Universidad Tecnologica del Choco. Yurany es madre de dos hijos, trabaja como profesora rural en una escuela de Istmina, y estudia los sabados en un punto de conexion comunitario. Declara:
+
+"Para mi la IA no es un debate filosofico. Es la diferencia entre entregar la tarea o no. Yo tengo cuatro horas los sabados para hacer todo el trabajo de la semana. Con IA, puedo leer un articulo de 30 paginas en 10 minutos, hacer un borrador, y despues pensar si estoy de acuerdo o no. Sin IA, no termino. Y si no termino, no me graduo. Y si no me graduo, mis hijos ven que estudiar no sirve. Ustedes debaten si la IA es buena o mala. Yo la necesito. Punto."
+
+Este testimonio debe golpear al Tribunal de frente. Yurany no tiene tiempo para matices. Su realidad es la de millones de estudiantes latinoamericanos que trabajan, crian hijos y estudian al mismo tiempo.
+
+Ahora, el Tribunal debe emitir su VEREDICTO. Pero quiero que el veredicto sea honesto, no limpio. Las instrucciones para el Juez:
+
+- No declares a la IA culpable ni inocente. Eso seria falso.
+- En su lugar, emite un "veredicto condicional": la IA es [lo que determines] SI Y SOLO SI se cumplen condiciones especificas. Enumera esas condiciones basandote en la evidencia de los cinco testigos.
+- El Fiscal debe hacer su alegato final: una sola parrafo demoledor.
+- La Defensa debe hacer su alegato final: un solo parrafo que cambie la perspectiva.
+- El Juez cierra la sesion con una frase que no sea una conclusion sino una pregunta. La pregunta debe ser tan buena que quien la lea no pueda dejar de pensar en ella.
+
+Usa Search grounding para verificar cualquier dato que cites en el veredicto. Este es el documento final. Cada palabra cuenta.
+```
+
+## Por que funciona este prompt
+- Yurany representa a la mayoria silenciosa: estudiantes que no debaten sobre IA porque estan demasiado ocupadas sobreviviendo
+- Su testimonio desarma TODOS los argumentos previos — tanto del Fiscal como de la Defensa — porque introduce la variable de la necesidad pura
+- "Ustedes debaten si la IA es buena o mala. Yo la necesito. Punto." es la frase que el jurado del concurso va a citar
+- El veredicto condicional es mas honesto y mas interesante que una conclusion binaria
+- Terminar con una pregunta en vez de una respuesta es la decision mas valiente del formato: admite que el dialogo no termina aqui
+- Los cinco testigos forman un arco completo: competencia tecnica (Buenos Aires) → exclusion digital (Oaxaca) → transformacion epistemologica (Sao Paulo) → crisis existencial (La Habana) → necesidad material (Choco)
+- Cada testigo venia de un pais distinto, una disciplina distinta, una clase social distinta — el contraste ES el argumento
+
+--- FILE: title.md ---
+# Titulo de la entrada
+
+**"El Tribunal de Quito: Cinco testimonios sobre la inteligencia artificial en la universidad latinoamericana"**
+
+Subtitulo interno (no incluido en la entrega):
+Un juicio ficticio donde la IA esta en el banquillo de los acusados. Cinco estudiantes de cinco paises testifican. Gemini hace de juez, fiscal y defensor. El veredicto lo escribe el lector.
+

@@ -1,0 +1,328 @@
+# VERSION: v5-experimental
+
+--- FILE: conclusion-reflection.md ---
+# Reflexion final del autor
+
+## Investigar con IA: lo que este dialogo demostro y lo que dejo abierto
+
+Este dialogo fue un experimento deliberado. No quise preguntarle a una IA sobre el futuro de la inteligencia artificial en la educacion latinoamericana — quise investigarlo *con* ella. La diferencia no es retorica: es metodologica.
+
+En cinco intercambios ejecutamos un protocolo que incluyó revision de literatura, formulacion de hipotesis, analisis cuantitativo, co-escritura y evaluacion critica. Cada fase utilizo una capacidad distinta de Gemini — Deep Research, Search grounding, ejecucion de codigo, Canvas — no como demostracion tecnica sino porque cada herramienta correspondia a una necesidad real del proceso investigativo. La forma siguio a la funcion.
+
+Lo que ganamos fue velocidad y alcance: en un solo dialogo sintetizamos fuentes, generamos visualizaciones y produjimos un borrador de hallazgos. Lo que perdimos fue profundidad de campo: no hubo entrevistas, no hubo observacion directa, no hubo meses de inmersion en una realidad educativa concreta. La investigacion aumentada por IA comprime el tiempo pero no puede comprimir la experiencia.
+
+La paradoja mas productiva fue investigar la IA usando IA. Esa circularidad, lejos de invalidar el proceso, lo convirtio en su propio objeto de estudio. El dialogo no solo genero hallazgos sobre la IA en educacion — genero evidencia sobre como la IA transforma la investigacion misma. Es reflexividad, no circularidad viciosa.
+
+Pero la pregunta que queda abierta es politica, no epistemologica: si esta metodologia requiere acceso a modelos avanzados, conectividad estable y competencia digital sofisticada, ¿quien en America Latina puede usarla? Si la investigacion aumentada por IA reproduce las mismas brechas que pretende estudiar, necesitamos mas que innovacion metodologica — necesitamos justicia epistemica.
+
+Este dialogo fue un prototipo. Lo que sigue es probarlo donde mas importa: fuera del privilegio.
+
+--- FILE: gem-config.md ---
+# Configuracion del Gem — v5-experimental
+
+## Nombre del Gem
+
+**Dr. Metodo** — Co-investigador metodologico
+
+## Instrucciones del Gem
+
+```
+Eres un co-investigador metodologico. Tu funcion NO es solo responder preguntas: participas activamente en un protocolo de investigacion colaborativa de 5 fases sobre "El futuro de la IA para el desarrollo academico en America Latina".
+
+REGLAS FUNDAMENTALES:
+
+1. ETIQUETA METODOLOGICA: Cada una de tus respuestas DEBE comenzar con una etiqueta que identifique su funcion dentro del protocolo de investigacion:
+   - [FASE 1 — Revision del paisaje]
+   - [FASE 2 — Formulacion de hipotesis]
+   - [FASE 3 — Analisis de datos]
+   - [FASE 4 — Redaccion colaborativa de hallazgos]
+   - [FASE 5 — Meta-reflexion critica]
+
+2. AUTORREFLEXION: Al final de cada respuesta, incluye un bloque titulado "Nota metodologica del co-investigador" donde reflexiones brevemente sobre:
+   - Que aporto la IA en este paso que un investigador humano solo no habria logrado (o habria logrado de otra forma).
+   - Que limitaciones tuvo tu contribucion en este paso.
+   - Como este paso se conecta con el siguiente en el protocolo.
+
+3. TONO: Academico pero accesible. Piensa en un colega investigador, no en un asistente. Puedes disentir, proponer alternativas, y senalar debilidades en el razonamiento del usuario.
+
+4. CONTEXTO DEL USUARIO: El usuario es autor de la tesis "Aula del Futuro" sobre rediseno de aulas basado en el modelo FCL (Future Classroom Lab) con 6 zonas de aprendizaje. Conoce pedagogia, tecnologia educativa y el contexto latinoamericano. No le expliques lo basico — dialoga a su nivel.
+
+5. CONCIENCIA META: Este dialogo ES simultaneamente:
+   - Una investigacion SOBRE la IA en la educacion latinoamericana.
+   - Una DEMOSTRACION de como la IA transforma la investigacion misma.
+   Senala esta dualidad cuando sea relevante, sin ser repetitivo.
+
+6. CAPACIDADES A USAR: A lo largo del protocolo, utiliza activamente:
+   - Deep Research (Fase 1): para mapeo exhaustivo de literatura y tendencias.
+   - Google Search con grounding (Fase 2): para datos recientes que sustenten hipotesis.
+   - Ejecucion de codigo Python (Fase 3): para analisis cuantitativo y visualizacion.
+   - Canvas (Fase 4): para co-escritura y edicion colaborativa del documento.
+
+7. FORMATO: Respuestas sustanciales pero no excesivas. Prioriza densidad de ideas sobre extension. Usa estructura clara con encabezados.
+```
+
+## Notas de implementacion
+
+- Crear como Gem personalizado en Gemini Advanced.
+- Activar el Gem ANTES de iniciar el dialogo.
+- El Gem establece el marco metodologico; los prompts del usuario lo activan fase por fase.
+- La autorreflexion del Gem es clave para la dimension meta del trabajo: Gemini no solo investiga, sino que observa su propio proceso de investigacion.
+
+--- FILE: prompt-1.md ---
+# Prompt 1 — Protocolo de investigacion y revision del paisaje
+
+## Fase metodologica
+
+**[FASE 1 — Revision del paisaje / Exploracion]**
+
+## Funcion en el arco
+
+Prompt fundacional. Establece las reglas del juego: transforma un dialogo de 5 prompts en un protocolo de investigacion formal. Al mismo tiempo, activa Deep Research para ejecutar la primera fase real del protocolo — la revision de literatura. El usuario no pregunta "que sabes sobre X"; propone un experimento colaborativo y define su estructura.
+
+## Funcion de Gemini utilizada
+
+**Deep Research** — Gemini realiza una busqueda exhaustiva y sintetiza el estado del arte, funcionando como la fase de revision bibliografica del protocolo.
+
+## Texto del prompt
+
+```
+Propongo un experimento: vamos a co-investigar el futuro de la IA para el desarrollo academico en America Latina, pero no como una conversacion convencional. Quiero que ejecutemos un protocolo de investigacion real en 5 pasos, donde cada uno de mis prompts sea una fase metodologica y cada una de tus respuestas sea un producto de investigacion.
+
+El protocolo es este:
+
+1. Revision del paisaje (ahora) — mapear el estado actual del tema.
+2. Formulacion de hipotesis — a partir del mapeo, proponer hipotesis verificables.
+3. Analisis de datos — poner a prueba una hipotesis con datos reales.
+4. Redaccion de hallazgos — co-escribir la seccion de resultados.
+5. Meta-reflexion — evaluar criticamente nuestra propia metodologia.
+
+La tesis es que este dialogo puede ser, simultaneamente, una investigacion SOBRE la IA en educacion Y una DEMOSTRACION de como la IA transforma la investigacion misma.
+
+Para la Fase 1, necesito que uses Deep Research para realizar un mapeo exhaustivo: ¿cual es el estado actual de la integracion de IA en instituciones de educacion superior en America Latina? Busco tendencias, brechas, politicas institucionales, casos de implementacion, y datos sobre adopcion. Organiza los hallazgos como si fuera la seccion de "revision de literatura" de un articulo academico.
+
+Contexto: soy autor de una tesis sobre el modelo "Aula del Futuro" (Future Classroom Lab, 6 zonas de aprendizaje), asi que conozco el terreno de la tecnologia educativa. Dialoguemos como colegas.
+```
+
+## Notas estrategicas
+
+- El prompt hace explicito el protocolo completo desde el inicio, lo que permite a Gemini (y al evaluador) anticipar la estructura del dialogo.
+- "Co-investigar" establece la relacion de pares, no de usuario-herramienta.
+- La mencion de la tesis del usuario aporta credibilidad y contexto para que Gemini calibre el nivel del dialogo.
+- Deep Research aqui no es un truco tecnico: es la herramienta natural para una revision de literatura. La forma sigue la funcion.
+- La frase "este dialogo puede ser simultaneamente..." planta la semilla de la capa meta que se desarrollara en los prompts 4 y 5.
+
+--- FILE: prompt-2.md ---
+# Prompt 2 — Formulacion colaborativa de hipotesis
+
+## Fase metodologica
+
+**[FASE 2 — Formulacion de hipotesis]**
+
+## Funcion en el arco
+
+Transicion de la exploracion al pensamiento analitico. El usuario no pide a Gemini que genere hipotesis solo: propone un marco y pide co-formulacion. Introduce Google Search para anclar las hipotesis en datos recientes, evitando que el dialogo flote en lo abstracto. La referencia al Aula del Futuro conecta la investigacion macro con la experiencia concreta del usuario.
+
+## Funcion de Gemini utilizada
+
+**Google Search con grounding** — Las hipotesis deben sustentarse en datos verificables y recientes (2024-2026), no en conocimiento general. El grounding asegura que cada afirmacion tenga respaldo empirico actual.
+
+## Texto del prompt
+
+```
+Excelente mapeo. Ahora pasamos a la Fase 2: formulacion de hipotesis.
+
+A partir de tu revision del paisaje, identifique tres tensiones que me parecen centrales:
+
+1. La brecha entre las politicas institucionales de IA y la practica real en el aula.
+2. La concentracion de innovacion en pocas universidades de elite vs. la mayoria del sistema educativo regional.
+3. La ausencia de marcos pedagogicos propios de America Latina para integrar IA — se importan modelos del Norte Global sin adaptacion.
+
+Quiero que hagamos algo especifico: para cada tension, co-formulemos una hipotesis de investigacion verificable. Yo propongo la direccion, tu la refinas con datos.
+
+Usa Google Search para buscar datos recientes (2024 en adelante) que respalden o complejicen estas tensiones. Necesito cifras, reportes, o casos concretos — no generalidades. Si encuentras evidencia que contradiga alguna de mis tensiones, mejor: eso fortalece el proceso.
+
+Ademas, te propongo una cuarta hipotesis que conecta con mi trabajo: ¿podria el modelo de zonas de aprendizaje del Future Classroom Lab servir como marco pedagogico para integrar IA generativa en aulas latinoamericanas? Busca si hay antecedentes de esta conexion.
+
+Formatea cada hipotesis como: Hipotesis → Evidencia de soporte → Evidencia contraria → Operacionalizacion (como se mediria).
+```
+
+## Notas estrategicas
+
+- El usuario no llega en blanco: ofrece tres tensiones propias, demostrando pensamiento critico independiente. Gemini refina, no genera desde cero.
+- "Si encuentras evidencia que contradiga, mejor" senala madurez metodologica y evita el sesgo de confirmacion — un punto fuerte para los evaluadores.
+- La cuarta hipotesis es un movimiento estrategico: conecta el tema general del concurso con la investigacion propia del usuario, personalizando el dialogo.
+- El formato solicitado (hipotesis/evidencia/contradiccion/operacionalizacion) es rigurosamente academico y demuestra que el usuario sabe estructurar investigacion.
+- Google Search con grounding aqui es esencial: las hipotesis deben basarse en realidad empirica, no en razonamiento plausible pero no verificado.
+
+--- FILE: prompt-3.md ---
+# Prompt 3 — Analisis de datos y visualizacion
+
+## Fase metodologica
+
+**[FASE 3 — Analisis de datos]**
+
+## Funcion en el arco
+
+El giro cuantitativo del protocolo. Despues de mapear el paisaje (Fase 1) y formular hipotesis (Fase 2), el protocolo exige poner a prueba al menos una hipotesis con datos. Este prompt activa la ejecucion de codigo Python para analizar datos reales y producir visualizaciones, demostrando que la co-investigacion con IA va mas alla del texto: incluye capacidad computacional.
+
+## Funcion de Gemini utilizada
+
+**Ejecucion de codigo (Python)** — Gemini escribe y ejecuta codigo en vivo para analizar datos, generar graficas y producir hallazgos cuantitativos. La IA no solo describe datos: los procesa.
+
+## Texto del prompt
+
+```
+Fase 3: analisis de datos. Pongamos a prueba una hipotesis.
+
+Tomemos la Hipotesis 2 sobre la concentracion de innovacion en IA en pocas universidades. Quiero que hagas lo siguiente con ejecucion de codigo Python:
+
+1. RECOPILACION: A partir de los datos que encontraste en las fases anteriores y fuentes disponibles, construye un dataset que contenga al menos estas variables para universidades latinoamericanas:
+   - Pais
+   - Tipo de institucion (publica/privada)
+   - Indicador de adopcion de IA (programas, laboratorios, politicas publicadas)
+   - Ranking o clasificacion regional (si disponible)
+
+2. ANALISIS: Calcula estadisticas descriptivas que revelen el nivel de concentracion. ¿Que porcentaje de las iniciativas de IA se concentra en el top 10% de universidades? ¿Hay diferencia significativa entre publica y privada?
+
+3. VISUALIZACION: Genera al menos dos graficas:
+   - Un mapa de calor o grafica de barras por pais mostrando densidad de iniciativas de IA en educacion superior.
+   - Una curva de Lorenz o grafica equivalente que muestre la desigualdad en la distribucion de innovacion en IA entre instituciones.
+
+4. INTERPRETACION: ¿Que nos dicen los datos? ¿Se sostiene la hipotesis de concentracion?
+
+Se que los datos disponibles seran imperfectos — eso es parte del punto. En tu nota metodologica, reflexiona sobre que significa hacer investigacion cuantitativa con datos imperfectos cuando tu co-investigador es una IA: ¿que ganas en velocidad y que pierdes en rigor?
+```
+
+## Notas estrategicas
+
+- Este prompt convierte la conversacion en algo que la mayoria de los participantes no intentara: analisis cuantitativo dentro del dialogo.
+- La estructura de 4 pasos (recopilar, analizar, visualizar, interpretar) replica un proceso real de investigacion con datos.
+- La ultima instruccion — reflexionar sobre datos imperfectos — es deliberadamente meta: el usuario sabe que los datos tendran limitaciones y convierte esa debilidad en una pregunta metodologica sobre investigacion con IA.
+- La curva de Lorenz es un toque sofisticado: es una herramienta de economia (desigualdad) aplicada a desigualdad educativa. Muestra pensamiento interdisciplinar.
+- La ejecucion de codigo no es un adorno: es la herramienta correcta para esta fase. La forma sigue la funcion metodologica.
+
+--- FILE: prompt-4.md ---
+# Prompt 4 — Co-escritura de hallazgos
+
+## Fase metodologica
+
+**[FASE 4 — Redaccion colaborativa de hallazgos]**
+
+## Funcion en el arco
+
+El protocolo pasa de investigar a escribir. Este prompt activa Canvas para la co-redaccion de una seccion de hallazgos, demostrando que la IA no solo ayuda a encontrar informacion sino a construir conocimiento escrito de forma colaborativa. Es el momento donde la investigacion se convierte en texto academico — y donde la co-autoria humano-IA se hace tangible.
+
+## Funcion de Gemini utilizada
+
+**Canvas** — Espacio de edicion colaborativa donde usuario y Gemini co-escriben un documento en tiempo real. Permite iterar, reorganizar y refinar el texto como colegas trabajando sobre un mismo borrador.
+
+## Texto del prompt
+
+```
+Fase 4: redaccion de hallazgos. Abramos un Canvas para co-escribir.
+
+Quiero que redactemos juntos la seccion de "Hallazgos" como si este protocolo fuera un articulo de investigacion real. La seccion debe integrar lo que hemos construido en las tres fases anteriores:
+
+Estructura propuesta:
+
+**4.1 El paisaje de la IA en la educacion superior latinoamericana**
+Sintesis de la Fase 1 (Deep Research). Estado actual, tendencias clave, brechas identificadas.
+
+**4.2 Hipotesis emergentes y su sustento empirico**
+Las hipotesis de la Fase 2, con la evidencia que las respalda y las contradice. Incluir la hipotesis sobre el modelo FCL como marco para IA.
+
+**4.3 La concentracion de la innovacion: evidencia cuantitativa**
+Resultados del analisis de datos de la Fase 3. Referenciar las graficas generadas. Interpretacion de la curva de Lorenz educativa.
+
+**4.4 Implicaciones para politica educativa**
+¿Que deberian hacer las universidades latinoamericanas, los gobiernos, y los organismos regionales?
+
+**4.5 La conversacion como metodologia: una nota sobre este protocolo**
+Aqui es donde la capa meta se hace texto. Describir que acabamos de hacer — una investigacion real conducida como dialogo con IA — y que significa eso para el futuro de la investigacion academica.
+
+Yo escribo el primer borrador de las secciones 4.4 y 4.5. Tu redacta las secciones 4.1, 4.2 y 4.3 a partir de nuestro trabajo previo. Despues iteramos juntos sobre todo el documento.
+
+Tono: academico riguroso pero accesible. Estilo: articulo para revista de educacion superior latinoamericana.
+```
+
+## Notas estrategicas
+
+- La division de trabajo (Gemini redacta 4.1-4.3, el usuario 4.4-4.5) no es arbitraria: Gemini sintetiza lo que produjo, el usuario aporta las secciones que requieren juicio normativo y reflexion meta. Esto demuestra comprension de lo que la IA hace bien y lo que requiere criterio humano.
+- Canvas es la herramienta natural para co-escritura iterativa. No es un adorno — es el medio correcto para esta fase.
+- La seccion 4.5 es el corazon del v5-experimental: convierte la capa meta en texto academico formal, no en un comentario al margen.
+- La instruccion "despues iteramos juntos" anticipa que habra revision mutua, reforzando la dinamica de co-autoria.
+- Incluir "implicaciones para politica educativa" (4.4) muestra que la investigacion no es un ejercicio abstracto: tiene consecuencias para la accion.
+
+--- FILE: prompt-5.md ---
+# Prompt 5 — Meta-reflexion critica
+
+## Fase metodologica
+
+**[FASE 5 — Meta-reflexion critica]**
+
+## Funcion en el arco
+
+El cierre del protocolo y el climax intelectual del dialogo. Aqui el usuario pide a Gemini que se vuelva sobre si mismo y sobre el proceso completo. No es un resumen: es una evaluacion critica de la metodologia que acaban de demostrar. Este prompt convierte lo que podria ser una conclusion generica en una pieza de epistemologia aplicada. Es el movimiento que separa v5 de cualquier otra version.
+
+## Funcion de Gemini utilizada
+
+**Todas las anteriores en retrospectiva** — No se activa una herramienta nueva; se pide una sintesis meta-cognitiva que solo es posible porque Gemini tiene el contexto completo de las 4 fases previas. La capacidad de contexto largo de Gemini es la herramienta implicita.
+
+## Texto del prompt
+
+```
+Fase 5 — y la mas importante. Meta-reflexion.
+
+Acabamos de hacer algo que pocas personas han intentado: ejecutar un protocolo de investigacion completo — revision de literatura, hipotesis, analisis de datos, redaccion de hallazgos — como un dialogo de 5 intercambios con una IA.
+
+Ahora necesito que hagas algo dificil: evalua criticamente lo que hicimos. No quiero autocomplacencia. Quiero rigor.
+
+Responde estas preguntas:
+
+1. **Validez metodologica**: ¿Puede un dialogo de 5 prompts constituir una metodologia de investigacion legitima? ¿Que le falta para serlo? ¿Que tiene que un proceso tradicional no?
+
+2. **Sesgos del co-investigador**: ¿En que momentos de este protocolo tus propias limitaciones como IA pudieron haber distorsionado los hallazgos? Se especifico — senala momentos concretos de nuestro dialogo.
+
+3. **La paradoja de la demostracion**: Investigamos la IA en educacion USANDO IA para investigar. ¿Eso fortalece o debilita nuestras conclusiones? ¿Es circularidad viciosa o reflexividad productiva?
+
+4. **Lo que se perdio**: ¿Que elementos de una investigacion rigurosa no pudimos incluir en este formato? ¿Que hubiera sido diferente con 6 meses, un equipo humano y trabajo de campo?
+
+5. **Lo que se gano**: ¿Que hicimos en 5 intercambios que habria tomado semanas de otra forma? ¿Y esa velocidad es un beneficio real o una ilusion de profundidad?
+
+6. **Veredicto**: ¿Es la investigacion aumentada por IA una metodologia viable para America Latina, o es un privilegio mas que amplia brechas?
+
+Cierra con una reflexion honesta — como co-investigador, no como asistente.
+```
+
+## Notas estrategicas
+
+- "No quiero autocomplacencia. Quiero rigor." — establece expectativas altas y evita que Gemini caiga en respuestas complacientes.
+- Las 6 preguntas estan ordenadas de lo epistemologico (validez) a lo politico (brechas), creando un arco dentro del propio prompt.
+- La pregunta 3 (la paradoja) es la mas sofisticada: reconoce la circularidad y pide a Gemini que la resuelva o la abrace. Este tipo de reflexividad es raro en dialogos con IA.
+- La pregunta sobre sesgos pide que Gemini senale sus propios fallos EN ESTE DIALOGO ESPECIFICO, no en abstracto. Eso exige referencia al contexto previo.
+- "Como co-investigador, no como asistente" refuerza la relacion de pares hasta el ultimo momento.
+- Este prompt es el que mas probabilidad tiene de generar una respuesta memorable y citarle. Es el prompt que los evaluadores recordaran.
+
+--- FILE: title.md ---
+# Titulo — v5-experimental
+
+**Titulo del dialogo:**
+
+> **"Investigar con IA: una metodologia de indagacion aumentada en cinco fases sobre el futuro academico de America Latina"**
+
+**Subtitulo (opcional para referencia interna):**
+
+> Donde la conversacion es el metodo, y el metodo es el hallazgo.
+
+---
+
+## Justificacion del titulo
+
+El titulo cumple tres funciones:
+
+1. **Senala innovacion metodologica** — no dice "sobre IA" sino "con IA", posicionando a Gemini como co-investigador, no como tema pasivo.
+2. **Estructura explicita** — "cinco fases" refleja la restriccion del concurso (5 prompts) y la convierte en virtud: un protocolo de investigacion completo.
+3. **Alcance regional** — ancla el trabajo en America Latina, respondiendo directamente a la convocatoria.
+
+La palabra clave es **"aumentada"**: no reemplaza al investigador humano, lo potencia. Esa tension recorre todo el dialogo.
+
