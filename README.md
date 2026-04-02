@@ -25,6 +25,12 @@ Inspired by Isaac Asimov's "The Last Question." The user queries a legacy AI sys
 | **v7-asimov-mid** | 2/3 | Full terminal commands with flags, ASCII dividers, status codes, all Gemini features |
 | **v7-asimov-max** | 3/3 | Last session before system shutdown. Access logs, glitch formatting, dramatic Asimov climax with interrupted final answer |
 
+### Chimera (v9) — Best of Top 5, SystemUI Frame
+
+| Version | Creativity | Angle |
+|---------|-----------|-------|
+| **v9-chimera** | MAX | Judicial AI archive + tribunal voices + decolonial confrontation + witness testimonies + Lorenz curve + meta-critique. AI questions YOU back. Conclusion written AFTER conversation. |
+
 ### Fresh Eyes Series (v8) — No UNESCO/LatAm-GPT/FCL influence, built from scratch
 
 Read the convocatoria with beginner's eyes. Completely original angles and references.

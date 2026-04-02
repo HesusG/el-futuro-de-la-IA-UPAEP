@@ -4,8 +4,8 @@
 
 | Rank | Version | Final Avg | C3 Creativity | Spread | Best For |
 |------|---------|----------|--------------|--------|----------|
-| 1 | **v3-creative** | **43.25** | 9.00 | 3 | Balanced jury, safest high-scorer |
-| 2 | **v8-fresh (bold)** | **42.00** | 8.50 | 4 | Jury that values originality + humanity |
+| 1 | **v3-creative** | **43.25** | 9.00 | 3 | Highest peak score, safest high-scorer |
+| 2 | **v9-chimera** | **42.875** | 8.50 | 2.5 | **Highest floor, strategically optimal** |
 | 3 | **v4-bold** | **42.25** | **9.50** | 3 | Jury that values intellectual boldness |
 | 4 | **v5-experimental** | **41.50** | 8.50 | 3 | Jury that values methodology |
 | 5 | **v7-asimov (mid)** | **40.75** | 8.75 | 5 | Jury that values creative form |
@@ -20,8 +20,8 @@
 | Jury Profile | Submit This | Why |
 |-------------|-------------|-----|
 | **Traditional academics** | v3-creative | Highest avg, strongest architecture, real references, manageable risk |
+| **Best risk-adjusted choice** | v9-chimera | Highest floor, constellation architecture prevents cascade failure, counter-questions force genuine dialogue |
 | **Values creativity above all** | v4-bold | Highest C3 (9.50), decolonial angle is unforgettable, P2 can't fail |
-| **Mix of academics + creatives** | v8-fresh-bold | Courtroom drama + 5 countries + conditional verdict. "Llegó a un velorio" is the line they'll remember |
 | **EdTech/innovation-focused** | v5-experimental | Only entry that IS the methodology it studies. Lorenz curve is unique |
 | **Wildcard: wants to be shocked** | v6-unhinged | Highest ceiling (Andrés gave 45.5) but highest floor risk (Marcela gave 38.5) |
 | **Playing it very safe** | v2-balanced | Best personal voice, lowest risk, but won't win |
