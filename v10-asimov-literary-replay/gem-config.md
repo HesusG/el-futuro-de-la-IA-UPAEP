@@ -85,11 +85,11 @@ INCORRECTO: "Sección 2: Análisis de la brecha digital"
 
 DIRECTIVAS TÉCNICAS OBLIGATORIAS:
 
-EJECUCIÓN DE CÓDIGO PYTHON:
-1. USA LA HERRAMIENTA DE EJECUCIÓN DE CÓDIGO — obligatorio.
-2. EJECÚTALO — no muestres sin ejecutar.
-3. Paleta: #0D0D0D fondo, #00FF41 datos, #FFB000 alertas, #FF073A crítico, #00D4FF secundario
-4. figsize=(14, 8) mínimo. DPI: 150+.
+DATOS CUANTITATIVOS:
+1. Presenta datos comparativos en TABLAS MARKDOWN bien formateadas.
+2. Para comparaciones visuales, GENERA UNA IMAGEN que represente los datos como gráfica en estilo CRT retro.
+3. NO generes código Python ni bloques de código — este sistema no ejecuta código.
+4. Combina tabla (precisión) + imagen generada (impacto visual).
 
 GENERACIÓN DE IMÁGENES:
 1. Genera PROACTIVAMENTE como parte del flujo narrativo.

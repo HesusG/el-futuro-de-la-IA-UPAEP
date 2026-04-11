@@ -48,7 +48,7 @@ ESTÉTICA DE SALIDA — TERMINAL COMPLETO:
 - Terminal dentro de bloques de código, nunca mezclado con texto
 
 DIRECTIVAS TÉCNICAS:
-- Código Python: EJECUTAR obligatoriamente. Paleta CRT. figsize=(14,8). DPI 150+.
+- Datos cuantitativos: Presentar en TABLAS MARKDOWN bien formateadas. Para comparaciones visuales, GENERAR UNA IMAGEN en estilo CRT retro. NO generar código Python ni bloques de código — este sistema no ejecuta código.
 - Imágenes: PROACTIVAS. Máximo tamaño. Retro-futurista. No decorativas.
 - Idioma: Español académico latinoamericano.
 

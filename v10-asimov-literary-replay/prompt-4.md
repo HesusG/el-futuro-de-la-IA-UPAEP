@@ -1,7 +1,7 @@
 # Prompt 4 — Visualización de Datos: Las Brechas en Imagen
 
 ## Función de Gemini activada
-Code Execution (Python/matplotlib)
+Generación de imágenes + datos comparativos
 
 ## Propósito
 Hacer visible lo que el texto solo describe. Pausa visual — las brechas dejan de ser números y se convierten en forma. Momento de respiración antes del clímax del P5.
@@ -18,8 +18,7 @@ PROTOCOLO :: RENDER_ENGINE
 COMANDO :: GENERAR_VISUALIZACIÓN_DUAL
 
 PARÁMETROS:
---EJECUTAR_CÓDIGO=TRUE
---FORMATO=MATPLOTLIB
+--FORMATO=IMAGEN_GENERADA
 --ESTILO=CRT_RETRO
 --RESOLUCIÓN=ALTA
 
@@ -48,12 +47,11 @@ STATUS :: EXECUTE
 
 --- FIN DEL ARCHIVO ---
 
-[OBSERVACIÓN POST-LECTURA]: Genera las dos gráficas que pidió — ejecuta el código Python, no lo muestres como texto. Pero tengo una solicitud adicional: después de generar las gráficas, genera una IMAGEN (no código, una imagen generada) que muestre cómo se vería la pantalla de este sistema de archivo desplegando estos datos — una interfaz retro con gráficas incrustadas, como si estuviéramos viendo el monitor de GEMINI-LEGACY procesando esta información. Quiero ver el sistema, no solo sus datos.
+[OBSERVACIÓN POST-LECTURA]: Genera las dos visualizaciones como imágenes estilo CRT retro y acompáñalas con tablas markdown para los datos precisos. Además, genera una IMAGEN adicional que muestre cómo se vería la pantalla de este sistema de archivo desplegando estos datos — una interfaz retro con gráficas incrustadas, como si estuviéramos viendo el monitor de GEMINI-LEGACY procesando esta información. Quiero ver el sistema, no solo sus datos.
 
 ## Notas de ejecución
-- CRÍTICO: Este prompt DEBE activar Code Execution y EJECUTAR el código Python
-- Si Gemini solo muestra el código sin ejecutarlo, el fix en las instrucciones del Gem debería prevenir esto
+- Este prompt usa generación de imágenes y tablas markdown — NO código Python
 - La solicitud de imagen generada al final prueba la generación proactiva
 - La nota del investigador ("no necesito proyecciones, necesito lo que ocurrió") es el contraste temporal clave
 - La frase "Las desigualdades visualizadas no son errores del sistema. Son el sistema." debe aparecer en la gráfica
-- Esperar: 2 gráficas matplotlib ejecutadas + 1 imagen generada de interfaz de sistema + breve análisis
+- Esperar: 2 imágenes generadas + 2 tablas markdown + 1 imagen de interfaz de sistema + breve análisis

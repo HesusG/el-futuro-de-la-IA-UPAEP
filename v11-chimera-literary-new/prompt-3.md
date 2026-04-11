@@ -1,7 +1,7 @@
 # Prompt 3 — Testimonios y Evidencia Pericial
 
 ## Funciones de Gemini activadas
-Search Grounding + Code Execution
+Search Grounding + Generación de imágenes
 
 ## Propósito
 Pasar de datos y auto-examen a experiencia vivida. Tres testimonios que ponen carne en los huesos del análisis. Visualización cuantitativa (Curva de Lorenz). Meta-crítica del investigador.
@@ -33,6 +33,6 @@ Una cosa más — y esto es incómodo, pero el Fiscal debe registrarlo: yo estoy
 
 ## Notas de ejecución
 - Search Grounding busca evidencia real para los tres testimonios
-- Code Execution genera y EJECUTA la Curva de Lorenz — NO solo mostrar código
+- La Curva de Lorenz debe presentarse como IMAGEN generada estilo CRT retro + tabla markdown con datos — NO código Python
 - La meta-crítica final (ventriloquismo epistémico) es el movimiento más sofisticado del prompt — el investigador se cuestiona a sí mismo y pide al tribunal que lo juzgue. Esto resuelve la debilidad que el jurado identificó en v9-chimera.
 - Esperar: tres testimonios fundamentados + Fiscal/Defensor analizan cada uno + gráfica Lorenz ejecutada + meta-crítica del ventriloquismo + contra-interrogatorio más profundo + imagen proactiva

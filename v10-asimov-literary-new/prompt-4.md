@@ -1,7 +1,7 @@
 # Prompt 4 — La Brecha entre Adopción e Impacto + Quién Pagó, Quién Cobró
 
 ## Función de Gemini activada
-Code Execution (Python/matplotlib)
+Generación de imágenes + datos comparativos
 
 ## Propósito
 Dos visualizaciones que muestran lo que el estudiante de 2026 no graficó: (1) la desconexión entre adopción institucional de IA y mejora medible en resultados estudiantiles, y (2) la relación entre inversión pública y penetración corporativa en IA educativa. No brechas de acceso — brechas de poder y rendición de cuentas.
@@ -14,8 +14,7 @@ PROTOCOLO :: RENDER_ENGINE
 COMANDO :: GENERAR_VISUALIZACIÓN_DUAL
 
 PARÁMETROS:
---EJECUTAR_CÓDIGO=TRUE
---FORMATO=MATPLOTLIB
+--FORMATO=IMAGEN_GENERADA
 --ESTILO=CRT_RETRO
 --RESOLUCIÓN=ALTA
 
@@ -67,9 +66,9 @@ Y un párrafo breve de análisis: ¿qué nos dicen estas dos gráficas juntas? S
 STATUS :: EXECUTE
 
 ## Notas de ejecución
-- CRÍTICO: Code Execution DEBE ejecutar Python, no solo mostrar el código
+- Genera imágenes estilo CRT retro y tablas markdown — NO código Python
 - Gráfica 1 es la más conceptualmente importante: visualiza la desconexión adopción/impacto
 - Gráfica 2 sigue el dinero — complementa el Sector 3 de P1
 - La imagen generada al final prueba generación proactiva
 - Si datos exactos son escasos, las estimaciones documentadas con fuentes son aceptables — la transparencia importa más que la precisión falsa
-- Esperar: 2 gráficas ejecutadas + 1 imagen de interfaz + análisis breve + posible actualización de la pregunta recurrente
+- Esperar: 2 imágenes generadas + 2 tablas markdown + 1 imagen de interfaz + análisis breve + posible actualización de la pregunta recurrente

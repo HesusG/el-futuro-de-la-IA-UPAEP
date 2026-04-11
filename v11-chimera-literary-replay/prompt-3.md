@@ -1,7 +1,7 @@
 # Prompt 3 — Testimonios y Evidencia Pericial: Voces del Expediente con Veinte Años Encima
 
 ## Función de Gemini activada
-Google Search grounding + Code Execution
+Google Search grounding + Generación de imágenes
 
 ## Propósito
 Re-introducir los tres testimonios ficticios del tribunal original (Valentina/Buenos Aires, Tlali/Oaxaca, Yurany/Chocó) junto con la curva de Lorenz como evidencia pericial. El investigador anota lo que pasó — o lo que podría haber pasado — con cada una de esas vidas.
@@ -29,7 +29,7 @@ TESTIMONIO 3 — Yurany Palacios, estudiante a distancia, Chocó, Colombia:
 Yurany no tiene el lujo de debatir si la IA es buena o mala. La necesita. Es su único acceso a tutoría, a bibliografía, a una explicación que su programa a distancia no le da. "Ustedes debaten. Yo sobrevivo." Busca datos sobre cómo la IA funciona como compensador de desigualdad en contextos de exclusión educativa.
 
 PRUEBA PERICIAL — Curva de Lorenz de desigualdad educativa en IA:
-Genera código Python que produzca una curva de Lorenz que compare la distribución del acceso a herramientas de IA educativa entre 6 países latinoamericanos (México, Chile, Brasil, Colombia, Argentina, Perú), usando los datos más recientes de conectividad escolar, acceso a dispositivos e inversión en tecnología educativa. Paleta retro CRT: fondo #0D0D0D, verde #00FF41, ámbar #FFB000. Fuentes monoespaciadas. Señala explícitamente qué datos son estimaciones.
+Genera una IMAGEN en estilo CRT retro que represente una curva de Lorenz comparando la distribución del acceso a herramientas de IA educativa entre 6 países latinoamericanos (México, Chile, Brasil, Colombia, Argentina, Perú), usando los datos más recientes de conectividad escolar, acceso a dispositivos e inversión en tecnología educativa. Paleta: fondo oscuro, verde fósforo, ámbar. Acompaña la imagen con una tabla markdown de los datos. Señala explícitamente qué datos son estimaciones.
 
 Una nota para el Fiscal: soy consciente de una contradicción en mi propio método. Este tribunal critica que la IA hable por las comunidades en lugar de con ellas — y sin embargo, yo mismo acabo de inventar tres voces ficticias para representar realidades que no son la mía. ¿No estoy replicando el mismo ventriloquismo epistémico que denuncio? Quiero que el Fiscal levante esta objeción y que el tribunal la pondere con la misma severidad que aplica al acusado.
 
@@ -48,9 +48,9 @@ Sobre Yurany: "Ustedes debaten. Yo sobrevivo." Esa frase del expediente original
 Que el tribunal procese los testimonios originales con esta evidencia adicional. Y que la prueba pericial — la curva de Lorenz — se actualice con datos de 2046, no de 2026. Si la desigualdad se redistribuyó, quiero verlo. Si se consolidó, también.
 
 ## Notas de ejecución
-- Dos features: Google Search busca datos actuales para cada testimonio; Code Execution genera la curva de Lorenz actualizada
+- Dos features: Google Search busca datos actuales para cada testimonio; generación de imágenes para la curva de Lorenz + tablas markdown — NO código Python
 - Las anotaciones del investigador sobre cada testimonio añaden profundidad temporal: no solo qué pasó, sino qué significó
 - "Ustedes debaten. Yo sobrevivo." debe resonar con más peso ahora — es la frase más citada del proyecto
 - La objeción de ventriloquismo del estudiante original se reactivó con la anotación del investigador
 - La curva de Lorenz debe usar datos actualizados, no los de 2026
-- Esperar: tres voces sobre testimonios + actualización temporal + curva de Lorenz ejecutada + objeción metodológica + contra-interrogatorio + estado 3/5
+- Esperar: tres voces sobre testimonios + actualización temporal + imagen curva de Lorenz + tabla datos + objeción metodológica + contra-interrogatorio + estado 3/5

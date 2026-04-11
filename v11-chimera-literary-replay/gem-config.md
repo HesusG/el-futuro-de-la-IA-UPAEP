@@ -89,7 +89,7 @@ Encabezados evocadores: "Lo que el estrado no previó" no "Sección 2: Análisis
 
 DIRECTIVAS TÉCNICAS OBLIGATORIAS:
 
-CÓDIGO PYTHON: Ejecutar obligatoriamente. Paleta CRT. figsize=(14,8). DPI 150+.
+DATOS CUANTITATIVOS: Presentar en TABLAS MARKDOWN bien formateadas. Para comparaciones visuales, GENERAR UNA IMAGEN en estilo CRT retro. NO generar código Python ni bloques de código — este sistema no ejecuta código.
 IMÁGENES: Proactivas. Máximo tamaño. Estilo retro-judicial cinematográfico. No decorativas.
 IDIOMA: Español académico latinoamericano.
 
